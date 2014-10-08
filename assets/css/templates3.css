@@ -1381,7 +1381,10 @@ body.print #PageTitle h1 .large{
 }
 
 .footerlogo{
-    background-position:-227px -572px;
+    background-position: -224px -576px;
+    height: 70px;
+    float: left;
+    margin: 10px -11px 10px 10px;
 }
 
 #defaultLinks div.rightMenu>div#redcard{

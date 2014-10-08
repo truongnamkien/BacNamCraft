@@ -21,16 +21,17 @@
 		<?php endforeach; ?>
 	</ul>
 <?php else: ?>
-	<ul class="menu">
+	<p class="quicklinks globalfooter-quicklinks">
+		<?php $count = 0; ?>
 		<?php foreach ($top_nav as $title => $nav): ?>
-			<li class="<?php echo $nav['class']; ?>" title="<?php echo $title; ?>">
-				<h2>
-					<a href="<?php echo $nav['url']; ?>" class="<?php echo $nav['class']; ?>" title="<?php echo $title; ?>">
-						<?php echo $title; ?>
-					</a>
-				</h2>
-			</li>
+			<a href="<?php echo $nav['url']; ?>" class="<?php echo $nav['class']; ?>" title="<?php echo $title; ?>">
+				<?php echo $title; ?>
+			</a>
+			<?php if ($count < count($top_nav) - 1): ?>
+				&nbsp;|&nbsp;
+			<?php endif; ?>
+			<?php $count++; ?>
 		<?php endforeach; ?>
-	</ul>
+	</p>
 <?php endif; ?>
 
