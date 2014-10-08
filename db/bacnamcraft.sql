@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 08, 2014 at 07:50 AM
+-- Generation Time: Oct 08, 2014 at 12:21 PM
 -- Server version: 5.6.16
 -- PHP Version: 5.5.11
 
@@ -152,7 +152,7 @@ CREATE TABLE IF NOT EXISTS `product` (
   `name_vietnamese` varchar(100) NOT NULL,
   `description_vietnamese` text NOT NULL,
   `price` int(11) NOT NULL,
-  `promotion` int(11) DEFAULT NULL,
+  `price_off` int(11) DEFAULT NULL,
   `product_category_id` int(11) NOT NULL,
   `display_order` int(11) NOT NULL,
   `status` enum('Active','Inactive') NOT NULL DEFAULT 'Active',
@@ -165,7 +165,7 @@ CREATE TABLE IF NOT EXISTS `product` (
   KEY `status` (`status`),
   KEY `created_at` (`created_at`),
   KEY `hot` (`hot`),
-  KEY `promotion` (`promotion`)
+  KEY `promotion` (`price_off`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
@@ -177,11 +177,9 @@ CREATE TABLE IF NOT EXISTS `product` (
 CREATE TABLE IF NOT EXISTS `product_category` (
   `product_category_id` int(11) NOT NULL AUTO_INCREMENT,
   `category_name_vietnamese` varchar(100) NOT NULL,
-  `url` varchar(255) NOT NULL,
   `display_order` int(11) NOT NULL,
   `parent_id` int(11) DEFAULT NULL,
   `status` enum('Active','Inactive') NOT NULL DEFAULT 'Active',
-  `color` varchar(10) NOT NULL DEFAULT 'f20498',
   PRIMARY KEY (`product_category_id`),
   UNIQUE KEY `display_order` (`display_order`),
   KEY `parent_id` (`parent_id`),
