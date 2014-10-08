@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.1.8
+-- version 4.1.12
 -- http://www.phpmyadmin.net
 --
--- Host: localhost
--- Generation Time: Sep 09, 2014 at 12:05 PM
--- Server version: 5.5.37-cll
--- PHP Version: 5.4.23
+-- Host: 127.0.0.1
+-- Generation Time: Oct 08, 2014 at 07:50 AM
+-- Server version: 5.6.16
+-- PHP Version: 5.5.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,73 +17,8 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `abama_abama`
+-- Database: `bncraft`
 --
-
--- --------------------------------------------------------
-
---
--- Table structure for table `blog`
---
-
-CREATE TABLE IF NOT EXISTS `blog` (
-  `blog_id` int(11) NOT NULL AUTO_INCREMENT,
-  `title_vietnamese` varchar(100) NOT NULL,
-  `created_at` int(11) NOT NULL,
-  `status` enum('Active','Inactive') NOT NULL DEFAULT 'Active',
-  `blog_category_id` int(11) NOT NULL,
-  PRIMARY KEY (`blog_id`),
-  KEY `created_at` (`created_at`),
-  KEY `blog_category_id` (`blog_category_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `blog_category`
---
-
-CREATE TABLE IF NOT EXISTS `blog_category` (
-  `blog_category_id` int(11) NOT NULL AUTO_INCREMENT,
-  `name_vietnamese` varchar(100) NOT NULL,
-  `display_order` int(11) NOT NULL,
-  PRIMARY KEY (`blog_category_id`),
-  UNIQUE KEY `display_order` (`display_order`),
-  KEY `name_vietnamese` (`name_vietnamese`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `blog_content`
---
-
-CREATE TABLE IF NOT EXISTS `blog_content` (
-  `blog_content_id` int(11) NOT NULL AUTO_INCREMENT,
-  `url` varchar(255) DEFAULT NULL,
-  `content_vietnamese` text,
-  `blog_id` int(11) NOT NULL,
-  `layout` int(11) NOT NULL,
-  `display_order` int(11) NOT NULL,
-  PRIMARY KEY (`blog_content_id`),
-  KEY `blog_id` (`blog_id`),
-  KEY `layout` (`layout`),
-  KEY `display_order` (`display_order`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `branch`
---
-
-CREATE TABLE IF NOT EXISTS `branch` (
-  `branch_id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  `url` varchar(255) NOT NULL,
-  PRIMARY KEY (`branch_id`),
-  UNIQUE KEY `name` (`name`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -147,21 +82,6 @@ CREATE TABLE IF NOT EXISTS `customer_email` (
   PRIMARY KEY (`customer_email_id`),
   UNIQUE KEY `email` (`email`),
   KEY `unsubscribed` (`unsubscribed`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `keyword`
---
-
-CREATE TABLE IF NOT EXISTS `keyword` (
-  `keyword_id` int(11) NOT NULL AUTO_INCREMENT,
-  `target_type` varchar(20) NOT NULL,
-  `target_id` int(11) NOT NULL,
-  `content` varchar(255) NOT NULL,
-  PRIMARY KEY (`keyword_id`),
-  KEY `target_type` (`target_type`,`target_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
@@ -280,43 +200,6 @@ CREATE TABLE IF NOT EXISTS `product_photo` (
   `product_id` int(11) NOT NULL,
   PRIMARY KEY (`product_photo_id`),
   KEY `product_id` (`product_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `recruitment`
---
-
-CREATE TABLE IF NOT EXISTS `recruitment` (
-  `recruitment_id` int(11) NOT NULL AUTO_INCREMENT,
-  `position` varchar(100) NOT NULL,
-  `description` text NOT NULL,
-  `from_time` int(11) NOT NULL,
-  `to_time` int(11) NOT NULL,
-  PRIMARY KEY (`recruitment_id`),
-  KEY `from_time` (`from_time`),
-  KEY `to_time` (`to_time`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `recruitment_application`
---
-
-CREATE TABLE IF NOT EXISTS `recruitment_application` (
-  `recruitment_application_id` int(11) NOT NULL AUTO_INCREMENT,
-  `recruitment_id` int(11) NOT NULL,
-  `fullname` varchar(50) NOT NULL,
-  `email` varchar(50) NOT NULL,
-  `mobile` varchar(20) NOT NULL,
-  `content` text NOT NULL,
-  `url` varchar(255) NOT NULL,
-  `created_at` int(11) NOT NULL,
-  PRIMARY KEY (`recruitment_application_id`),
-  KEY `recruitment_id` (`recruitment_id`,`email`),
-  KEY `created_at` (`created_at`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
