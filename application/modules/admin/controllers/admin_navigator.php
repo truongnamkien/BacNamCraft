@@ -40,18 +40,6 @@ class Admin_Navigator extends MY_Admin_Controller {
 					'url' => site_url('admin/content'),
 					'icon' => 'bookmark',
 				),
-				'blog_category' => array(
-					'url' => site_url('admin/blog_category'),
-					'icon' => 'list-alt',
-				),
-				'blog' => array(
-					'url' => site_url('admin/blog'),
-					'icon' => 'file',
-				),
-				'blog_content' => array(
-					'url' => site_url('admin/blog_content'),
-					'icon' => 'pencil',
-				),
 		));
 	}
 
@@ -66,10 +54,6 @@ class Admin_Navigator extends MY_Admin_Controller {
 
 	private function _product_sub_nav() {
 		return array('navs' => array(
-				'branch' => array(
-					'url' => site_url('admin/branch'),
-					'icon' => 'qrcode',
-				),
 				'product_category' => array(
 					'url' => site_url('admin/product_category'),
 					'icon' => 'list',
@@ -87,14 +71,6 @@ class Admin_Navigator extends MY_Admin_Controller {
 
 	private function _user_sub_nav() {
 		return array('navs' => array(
-				'recruitment' => array(
-					'url' => site_url('admin/recruitment'),
-					'icon' => 'asterisk',
-				),
-				'recruitment_application' => array(
-					'url' => site_url('admin/recruitment_application'),
-					'icon' => 'folder-close',
-				),
 				'customer_email' => array(
 					'url' => site_url('admin/customer_email'),
 					'icon' => 'user',

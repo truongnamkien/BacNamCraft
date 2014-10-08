@@ -9,8 +9,8 @@ class Navigator extends MY_Controller {
 
 	public function __construct() {
 		parent::__construct();
-		$this->load->model(array('page_model', 'product_model', 'product_category_model', 'product_photo_model', 'blog_category_model', 'content_model', 'blog_content_model', 'keyword_model'));
-		$this->load->language(array('product', 'static_content', 'blog', 'contact', 'recruitment'));
+		$this->load->model(array('page_model', 'product_model', 'product_category_model', 'product_photo_model', 'content_model'));
+		$this->load->language(array('product', 'static_content', 'contact'));
 		$this->load->config('content_page', TRUE);
 		self::$controller = $this->router->fetch_class();
 		self::$method = $this->router->fetch_method();
@@ -26,42 +26,13 @@ class Navigator extends MY_Controller {
 				'class' => ((self::$controller == 'category' || self::$controller == 'product') && self::$method == 'detail' ? 'selected' : '') . ' ' . ($pos == 'top' ? 'fake' : ''),
 				'sub_nav' => $sub_nav,
 			);
-			$sub_nav = $this->_blog_nav();
-			$nav = current($sub_nav);
-			$top_nav[lang('blog_blog')] = array(
-				'url' => ($pos == 'top' ? '#' : $nav['url']),
-				'class' => (self::$controller == 'blog' ? 'selected' : '') . ' ' . ($pos == 'top' ? 'fake' : ''),
-				'sub_nav' => $sub_nav,
-			);
 		}
 		$top_nav = array_merge($top_nav, $this->_optional_page_nav());
-		$top_nav[lang('recruitment_recruitment')] = array(
-			'url' => site_url('recruitment'),
-			'class' => (self::$controller == 'recruitment' ? 'selected' : ''),
-		);
 		$top_nav[lang('contact_contact')] = array(
 			'url' => site_url('contact'),
 			'class' => (self::$controller == 'contact' ? 'selected' : ''),
 		);
 		$this->load->view('pagelet_main_menu', array('top_nav' => $top_nav, 'pos' => $pos));
-	}
-
-	private function _blog_nav() {
-		$category_list = $this->blog_category_model->get_all();
-		if ($category_list['return_code'] == API_SUCCESS && !empty($category_list['data'])) {
-			$category_list = $category_list['data'];
-		} else {
-			$category_list = array();
-		}
-
-		$sub_list = array();
-		foreach ($category_list as $category) {
-			$sub_list[$category['name_' . $this->_current_lang]] = array(
-				'url' => blog_category_url($category),
-				'class' => '',
-			);
-		}
-		return $sub_list;
 	}
 
 	private function _product_nav() {
@@ -162,9 +133,7 @@ class Navigator extends MY_Controller {
 		$img_widths = $this->config->item('page_content_photo_default_width', 'content_page');
 		$description = FALSE;
 		$photo_path = FALSE;
-		if ($category_id = $this->input->get_post('blog_category_id')) {
-			$url = blog_category_url($category_id);
-		} else if ($category_id = $this->input->get_post('category_id')) {
+		if ($category_id = $this->input->get_post('category_id')) {
 			$url = product_category_url($category_id);
 			$target_type = 'product_category';
 			$target_id = $category_id;
@@ -211,41 +180,11 @@ class Navigator extends MY_Controller {
 					break;
 				}
 			}
-		} else if ($blog_id = $this->input->get_post('blog_id')) {
-			$url = blog_url($blog_id);
-			$target_type = 'blog';
-			$target_id = $blog_id;
-			$contents = $this->blog_content_model->get_where(array('blog_id' => $blog_id), 'display_order');
-			if ($contents['return_code'] == API_SUCCESS && !empty($contents['data'])) {
-				$contents = $contents['data'];
-			} else {
-				$contents = array();
-			}
-
-			foreach ($contents as $content) {
-				if (empty($description) && $content['layout'] < count($img_widths)) {
-					$description = character_limiter(strip_tags($content['content_' . $this->_current_lang]), 100);
-				}
-				if (empty($photo_path) && $content['layout'] < 0 && !empty($content['url'])) {
-					$photo_path = Modules::run('photo/_get_photo_path', $content['url'], 470);
-				}
-				if (!empty($description) && !empty($photo_path)) {
-					break;
-				}
-			}
-		}
-		if (isset($target_id) && isset($target_type)) {
-			$keyword_info = $this->keyword_model->get_where(array('target_type' => $target_type, 'target_id' => $target_id));
-			if ($keyword_info['return_code'] == API_SUCCESS && !empty($keyword_info['data'])) {
-				$keyword_info = array_shift($keyword_info['data']);
-			} else {
-				$keyword_info = array();
-			}
 		}
 
 		$data = array(
 			'url' => $url,
-			'keyword' => Modules::run('construction/_static_content', 'keyword', 'config') . (isset($keyword_info) && !empty($keyword_info) ? ', ' . $keyword_info['content'] : ''),
+			'keyword' => Modules::run('construction/_static_content', 'keyword', 'config'),
 			'description' => (isset($description) && !empty($description) ? $description : Modules::run('construction/_static_content', 'description', 'config')),
 			'photo_path' => (isset($photo_path) && !empty($photo_path) ? base_url($photo_path) : asset_url('images/watermark.png')),
 			'display' => $this->input->get_post('display'),

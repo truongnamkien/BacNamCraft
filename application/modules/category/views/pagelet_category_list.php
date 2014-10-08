@@ -58,8 +58,6 @@
             <div class="catbn">
                 <?php echo Modules::run('home/_pagelet_sub_banner', 'product'); ?>
             </div>
-
-            <?php echo Modules::run('branch/_pagelet_branch_list'); ?>
         </div>
     <?php endif; ?>
 <?php else: ?>

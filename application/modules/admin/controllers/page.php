@@ -127,16 +127,6 @@ class Page extends MY_Inner_Admin_Controller {
         parent::remove($id, $redirect);
     }
 
-    protected function set_actions($id) {
-        $actions = parent::set_actions($id);
-        $actions['keyword'] = array(
-            'url' => site_url('admin/keyword/update?target_type=page&target_id=' . $id),
-            'button' => 'success',
-            'icon' => 'tags'
-        );
-        return $actions;
-    }
-
     private function _get_parent_pages($extra_select = FALSE) {
         $pages = array();
         if (!empty($extra_select)) {

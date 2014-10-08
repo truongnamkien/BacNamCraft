@@ -8,20 +8,13 @@ $lang['manager_submenu_user'] = 'Thông tin người dùng';
 $lang['manager_submenu_config'] = 'Cấu hình';
 
 // Sub menu
-$lang['manager_keyword'] = 'Keyword';
 $lang['manager_product'] = 'Sản phẩm';
 $lang['manager_product_category'] = 'Danh mục sản phẩm';
 $lang['manager_order'] = 'Đơn hàng';
 $lang['manager_customer_email'] = 'Khách hàng';
-$lang['manager_branch'] = 'Nhãn hiệu';
 
-$lang['manager_recruitment'] = 'Tuyển dụng';
-$lang['manager_recruitment_application'] = 'Hồ sơ tuyển dụng';
 $lang['manager_page'] = 'Trang';
 $lang['manager_content'] = 'Nội dung trang';
-$lang['manager_blog_category'] = 'Phân loại tin tức';
-$lang['manager_blog'] = 'Tin tức';
-$lang['manager_blog_content'] = 'Nội dung tin tức';
 $lang['manager_home'] = 'Banner';
 $lang['manager_config'] = 'Cấu hình';
 $lang['manager_contact'] = 'Liên hệ';
@@ -66,7 +59,6 @@ $lang['admin_action_move_down'] = 'Xuống';
 $lang['admin_action_back_list'] = 'Về trang danh sách';
 $lang['admin_action_activate'] = 'Kích hoạt';
 $lang['admin_action_deactivate'] = 'Khóa';
-$lang['admin_action_keyword'] = 'Cập nhật keyword';
 $lang['admin_action_reply'] = 'Trả lời';
 $lang['admin_action_export'] = 'Export ra Excel';
 $lang['admin_action_download'] = 'Download';

@@ -272,16 +272,6 @@ class Product extends MY_Inner_Admin_Controller {
         }
     }
 
-    protected function set_actions($id) {
-        $actions = parent::set_actions($id);
-        $actions['keyword'] = array(
-            'url' => site_url('admin/keyword/update?target_type=product&target_id=' . $id),
-            'button' => 'success',
-            'icon' => 'tags'
-        );
-        return $actions;
-    }
-
     /**
      * List tất cả danh mục Sản phẩm ra để select
      * @return type

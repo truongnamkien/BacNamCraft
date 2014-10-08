@@ -172,16 +172,6 @@ class Product_Category extends MY_Inner_Admin_Controller {
         return $result;
     }
 
-    protected function set_actions($id) {
-        $actions = parent::set_actions($id);
-        $actions['keyword'] = array(
-            'url' => site_url('admin/keyword/update?target_type=product_category&target_id=' . $id),
-            'button' => 'success',
-            'icon' => 'tags'
-        );
-        return $actions;
-    }
-
     protected function handle_move($id, $direction = 'up', $filter_by = FALSE) {
         parent::handle_move($id, $direction, 'parent_id');
     }

@@ -43,7 +43,7 @@ define('FOPEN_READ_WRITE_CREATE_STRICT',		'x+b');
 */
 
 define('SERVER_NAME', 'http://web.local');
-define('PAGE_TITLE', 'Abama');
+define('PAGE_TITLE', 'Bac Nam Craft');
 
 define('STATUS_ACTIVE', 'Active');
 define('STATUS_INACTIVE', 'Inactive');

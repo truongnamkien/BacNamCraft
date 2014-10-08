@@ -158,47 +158,4 @@ if (!function_exists('product_url')) {
 
 }
 
-if (!function_exists('blog_url')) {
-
-    function blog_url($blog_info) {
-        $ci = & get_instance();
-        $ci->load->helper('text');
-
-        if (is_numeric($blog_info)) {
-            $ci->load->model('blog_model');
-            $blog_info = $ci->blog_model->get($blog_info);
-            if ($blog_info['return_code'] == API_SUCCESS && !empty($blog_info['data'])) {
-                $blog_info = $blog_info['data'];
-            }
-        }
-        if (!isset($blog_info['blog_id'])) {
-            return FALSE;
-        }
-        $name = preg_replace('/[^A-Za-z0-9() -]/', '', slug_convert($blog_info['title_vietnamese']));
-        return site_url('blog/detail/' . htmlspecialchars($name) . '?blog_id=' . $blog_info['blog_id']);
-    }
-
-}
-
-if (!function_exists('blog_category_url')) {
-
-    function blog_category_url($category_info) {
-        $ci = & get_instance();
-        $ci->load->helper('text');
-
-        if (is_numeric($category_info)) {
-            $ci->load->model('blog_category_model');
-            $category_info = $ci->blog_category_model->get($category_info);
-            if ($category_info['return_code'] == API_SUCCESS && !empty($category_info['data'])) {
-                $category_info = $category_info['data'];
-            }
-        }
-        if (!isset($category_info['blog_category_id'])) {
-            return FALSE;
-        }
-        $name = preg_replace('/[^A-Za-z0-9() -]/', '', slug_convert($category_info['name_vietnamese']));
-        return site_url('blog/category/' . htmlspecialchars($name) . '?blog_category_id=' . $category_info['blog_category_id']);
-    }
-
-}
 
