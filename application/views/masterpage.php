@@ -69,143 +69,9 @@
 						</div>
 
 						<div id="userWrapper">
+							<?php echo Modules::run('search/_search_form'); ?>
 
-
-							<form name="CatalogSearchForm" action="/s" method="get" id="Search" style="background: none repeat scroll 0% 0% transparent; width: 605px;">
-
-								<fieldset>
-									<div class="searchWrap">
-
-										<a style="padding-right: 11px;" id="SearchCategories" href="#searchCategories" class="">
-											<span id="selectedCategory">all</span>
-											<span class="screen-reader-only">&nbsp;categories</span>
-											<span id="categoryListTypeVal" class="screen-reader-only">&nbsp;Expand List</span>
-										</a>
-
-										<div id="SearchCategoryList" style="visibility: hidden; display: none;">
-											<ul>
-
-												<li>
-													<a href="#" id="1" name="category" title="all categories" value="0|All|matchallpartial|all categories" class="checked">all categories</a>
-												</li>		
-
-												<li>
-
-													<a href="#" id="4258" name="category" title="baby" value="9976102|All|matchallpartial|baby">baby</a>
-												</li>
-
-												<li>
-
-													<a href="#" id="510501" name="category" title="beauty" value="8666421|All|matchallpartial|beauty">beauty</a>
-												</li>
-
-												<li>
-
-													<a href="#" id="22510" name="category" title="clearance" value="9611722|All|matchallpartial|clearance">clearance</a>
-												</li>
-
-												<li>
-
-													<a href="#" id="4476" name="category" title="electronics" value="9975894|All|matchallpartial|electronics">electronics</a>
-												</li>
-
-												<li>
-
-													<a href="#" id="9501" name="category" title="entertainment" value="9975218|All|matchallpartial|entertainment">entertainment</a>
-												</li>
-
-												<li>
-
-													<a href="#" id="3948" name="category" title="furniture" value="9976167|All|matchallpartial|furniture">furniture</a>
-												</li>
-
-												<li>
-
-													<a href="#" id="5157" name="category" title="giftcards" value="9975234|All|matchallpartial|giftcards">giftcards</a>
-												</li>
-
-												<li>
-
-													<a href="#" id="5033" name="category" title="grocery &amp; essentials" value="9975358|All|matchallpartial|grocery &amp; essentials">grocery &amp; essentials</a>
-												</li>
-
-												<li>
-
-													<a href="#" id="3703" name="category" title="health" value="9976667|All|matchallpartial|health">health</a>
-												</li>
-
-												<li>
-
-													<a href="#" id="3929" name="category" title="home" value="9976441|All|matchallpartial|home">home</a>
-												</li>
-
-												<li>
-
-													<a href="#" id="3663" name="category" title="men" value="0|All|matchallpartial|men">men</a>
-												</li>
-
-												<li>
-
-													<a href="#" id="4959" name="category" title="party supplies &amp; holidays" value="9975432|All|matchallpartial|party supplies &amp; holidays">party supplies &amp; holidays</a>
-												</li>
-
-												<li>
-
-													<a href="#" id="4169" name="category" title="patio &amp; garden" value="9976257|All|matchallpartial|patio &amp; garden">patio &amp; garden</a>
-												</li>
-
-												<li>
-
-													<a href="#" id="4931" name="category" title="pets" value="9975460|All|matchallpartial|pets">pets</a>
-												</li>
-
-												<li>
-
-													<a href="#" id="5160" name="category" title="school &amp; office supplies" value="9975231|All|matchallpartial|school &amp; office supplies">school &amp; office supplies</a>
-												</li>
-
-												<li>
-
-													<a href="#" id="4919" name="category" title="scrapbooking &amp; photo" value="9975472|All|matchallpartial|scrapbooking &amp; photo">scrapbooking &amp; photo</a>
-												</li>
-
-												<li>
-
-													<a href="#" id="4787" name="category" title="sports &amp; outdoors" value="9975605|All|matchallpartial|sports &amp; outdoors">sports &amp; outdoors</a>
-												</li>
-
-												<li>
-
-													<a href="#" id="4694" name="category" title="toys" value="9975708|All|matchallpartial|toys">toys</a>
-												</li>
-
-												<li>
-
-													<a href="#" id="4509" name="category" title="video games" value="9975893|All|matchallpartial|video games">video games</a>
-												</li>
-
-											</ul>
-										</div>
-										<span class="divider"></span>
-										<label for="searchTerm" class="screen-reader-only">search</label>
-										<input style="width: 431px; color: rgb(102, 102, 102);" id="searchTerm" name="searchTerm" class="text ac_input" value="" maxlength="50" autocomplete="off" type="text">
-										<div class="ac_results" style="visibility: hidden; position: absolute; font-weight: normal; width: 284px; top: 42px; left: 174px; display: none;">
-											<span class="screen-reader-only" role="status" aria-live="polite">Suggestions are available, use arrow keys to navigate and press
-												enter to make a selection.</span>
-											<ul>
-
-											</ul>
-										</div>	
-
-										<button type="submit" id="goSearch" class="" title="Search"><span class="screen-reader-only">Search</span></button>
-										<input value="0|All|matchallpartial|all categories" id="category" name="category" type="hidden">
-										<input value="" id="lnk" name="lnk" type="hidden">
-									</div>
-								</fieldset>
-							</form>
 							<ul id="ShopMenu">
-
-
 								<li class="mini-cart-wrapper-leave no_background" id="mini-cart-wrapper" ajaxsrc="/checkout_minicart?langId=-1&amp;storeId=10151&amp;catalogId=10051&amp;calculationUsageId=-1&amp;calculationUsageId=-2&amp;calculationUsageId=-7" style="background-image: none; background-position: initial initial; background-repeat: initial initial;"> 
 									<a href="http://www.target.com/checkout_cartview?updatePrices=1&amp;calculationUsageId=-1&amp;calculationUsageId=-2&amp;calculationUsageId=-7&amp;orderId=.&amp;promoCode=&amp;lnk=nav_cart" rel="nofollow" id="mini-cart-icon">
 										<input id="orderQty" value="0" type="hidden">
@@ -218,7 +84,8 @@
 									<div style="" id="mini-cart"><span class="blocker"></span><div class="summary"></div><div class="items-set"></div></div></li>
 
 
-							</ul><a class="mini-cart-arrow mini-cart-arrow-leave mini-cart-arrow_mouseleave" rel="nofollow" href="#">Mini Cart Arrow</a>
+							</ul>
+							<a class="mini-cart-arrow mini-cart-arrow-leave mini-cart-arrow_mouseleave" rel="nofollow" href="#"></a>
 
 						</div>
 					</div>
@@ -473,7 +340,6 @@
                             <div class="menu_wrap" id="main-menu">
 
                                 <div class="search">
-									<?php echo Modules::run('search/_search_form'); ?>
                                 </div>
                             </div>
                         </div>

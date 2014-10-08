@@ -5718,3 +5718,10 @@ body.newLayout,
     width: 66px;
     background: url("images/icon-new_at_Target.jpg") no-repeat 0 0;
 }
+
+#frmsearch {
+    background: none repeat scroll 0% 0% transparent;
+    width: 605px;
+    float:left;
+    padding: 6px 0;
+}
