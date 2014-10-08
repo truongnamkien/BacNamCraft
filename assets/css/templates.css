@@ -5725,3 +5725,59 @@ body.newLayout,
     float:left;
     padding: 6px 0;
 }
+
+#primaryry {
+    min-height: 330px;
+    color: #666;
+    padding: 32px 0px 0px;
+}
+
+#find-order {
+    float: left;
+    padding: 0px 0px 0px 12px;
+}
+
+#Main p.required {
+    font-size: 12px;
+    line-height: 130%;
+    margin: 3px 0px 5px;
+    padding: 0px;
+    font-style: italic;
+}
+
+#find-order .form-content {
+    margin-top: 24px;
+}
+.input-step:after, form .input-step.input-group .input-field:after {
+    height: 0px;
+    clear: both;
+    content: ".";
+    display: block;
+    visibility: hidden;
+}
+
+.input-step {
+    margin: 0px 0px 14px;
+}
+
+#find-order .input-step label {
+    margin: 0px 0px 8px;
+    color: #333;
+    display: block;
+    font-size: 12px;
+    margin: 0px 0px 12px;
+    font-weight: 700;
+}
+
+#find-order .form-content input, #search-order .form-content input {
+    margin: 0px;
+    width: 400px;
+    height: 27px;
+    border: 1px solid #D1D9DC;
+}
+
+#find-order .form-content textarea {
+    margin: 0px;
+    width: 400px;
+    border: 1px solid #D1D9DC;
+}

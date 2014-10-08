@@ -103,3 +103,9 @@
 #content-detail ul ul li, #content-detail ul ol li,
 #content-detail ol ol li, #content-detail ol ul li { margin-bottom: 6px; }
 #content-detail li { margin-bottom: 12px; }
+
+.error_message {
+    margin-top: 10px;
+    color: #F00;
+    margin-bottom: 20px;
+}
