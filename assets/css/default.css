@@ -88,3 +88,18 @@
 #back-top span {width:35px;height:20px;display: block;margin-bottom: 7px;background:url(images/up-arrow.png) no-repeat left 0px;}
 #back-top a:hover span { background-position:left -34px;}
 
+#content-detail ul, #content-detail ol { margin-bottom: 20px;}
+#content-detail ul { list-style-type: disc; }
+#content-detail ol { list-style: decimal; }
+#content-detail ul, #content-detail ol, 
+#content-detail ul.square, 
+#content-detail ul.circle, 
+#content-detail ul.disc { margin-left: 30px; }
+#content-detail ul.square { list-style: square outside; }
+#content-detail ul.circle { list-style: circle outside; }
+#content-detail ul.disc { list-style: disc outside; }
+#content-detail ul ul, #content-detail ul ol,
+#content-detail ol ol, #content-detail ol ul { margin: 4px 0 5px 30px; }
+#content-detail ul ul li, #content-detail ul ol li,
+#content-detail ol ol li, #content-detail ol ul li { margin-bottom: 6px; }
+#content-detail li { margin-bottom: 12px; }

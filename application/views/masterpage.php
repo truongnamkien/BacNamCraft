@@ -35,7 +35,7 @@
         <meta http-equiv="imagetoolbar" content="no" />
     </head>
 
-    <body class="home-underlay newLayout k2">
+    <body class="bgWrapper">
         <div id="fb-root"></div>
         <script>
 			(function(d, s, id) {
@@ -79,7 +79,7 @@
 				</div>
 
 				<div id="Content">
-					<?php //echo $PAGE_CONTENT; ?>
+					<?php echo $PAGE_CONTENT; ?>
 				</div>
 				<div class="clear"></div>
 
@@ -93,7 +93,9 @@
 
 						<?php echo Modules::run('navigator/_pagelet_main_menu', 'bottom'); ?>
 						<div class="clear"></div>
-						<p class="copyInfo">© 2014 Target Brands, Inc. Target, the Bullseye Design and Bullseye Dog are trademarks of Target Brands, Inc. All rights reserved. </p>
+
+						<?php echo Modules::run('navigator/_pagelet_footer'); ?>
+
 						<div id="QuickLinkFooter" class="footerLine"></div>
 					</div>
 					<div class="endpage"></div>
@@ -115,27 +117,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		<?php echo Modules::run('navigator/_pagelet_header_bar'); ?>
-
         <div id="demoContainer" class="dpn">
             <div class="wapper_body">
                 <div class="header">
@@ -144,11 +125,6 @@
                             <a class="logo mt20" href="<?php echo site_url(); ?>">
                                 <img src="<?php echo asset_url('images/logo.png'); ?>" alt="<?php echo PAGE_TITLE; ?>" />
                             </a>
-                        </div>
-                        <div class="language">
-							<div class="hotline">
-								<?php echo Modules::run('navigator/_pagelet_hotline'); ?>
-							</div>
                         </div>
                     </div>
                 </div>
@@ -160,14 +136,6 @@
                     <div class="clear"></div>
                 </div>
 
-                <div class="bottom">
-                    <div class="mnfooter">
-                        <div class="menu_footer">
-                        </div>
-                    </div>  
-
-					<?php echo Modules::run('navigator/_pagelet_footer'); ?>
-                </div>
 
 				<?php //echo Modules::run('navigator/_pagelet_connect'); ?>
 				<?php //echo Modules::run('navigator/_pagelet_subscribe'); ?>

@@ -231,7 +231,8 @@
     font-size:11px;
     float:right;
     margin-right:8px;
-    padding:2px 0 0
+    padding:2px 0 0;
+    text-align: right;
 }
 #Footer #global {
     border-top:2px solid #e0e0e0;

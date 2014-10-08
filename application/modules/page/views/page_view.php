@@ -1,17 +1,17 @@
-<?php echo asset_link_tag('css/news.css', 'stylesheet', 'text/css'); ?>
+<div id="catgoryHeaderContainer" class="categoryTemplate">
+	<div id="categoryHeader">
+		<h1 class="search-large-text"><?php echo $page['name_' . $this->_current_lang]; ?></h1>
+	</div>
+	<div class="fRight mt25">
+		<div class="fb-like" data-href="<?php echo page_url($page); ?>" data-send="true" data-layout="button_count" data-show-faces="true" data-font="verdana"></div>
+	</div>
+	<div class="clear"></div>
 
-<?php echo Modules::run('category/_pagelet_category_list'); ?>
+	<div id="Main" class="mainSize2 L1L2-template templateRender">
+		<?php echo Modules::run('navigator/_pagelet_breadcrumb'); ?>
 
-<div class="ct_news">
-    <div class="new_detail">
-        <div class="fRight">
-            <div class="fb-like" data-href="<?php echo page_url($page); ?>" data-send="true" data-layout="button_count" data-show-faces="true" data-font="verdana"></div>
-        </div>
-        <h1><?php echo $page['name_' . $this->_current_lang]; ?></h1>
-        <div class="clear"></div>
-
-        <div class="desc">
-            <?php echo Modules::run('page/_display_content', $page['page_id']); ?>
-        </div>
-    </div>
+		<div class="componentContainer" id="content-detail">
+			<?php echo Modules::run('page/_display_content', $page['page_id']); ?>
+		</div>
+	</div>
 </div>

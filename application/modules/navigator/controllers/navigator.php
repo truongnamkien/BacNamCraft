@@ -257,18 +257,63 @@ class Navigator extends MY_Controller {
 		return $this->load->view('pagelet_communication', $data, TRUE);
 	}
 
-	public function _pagelet_header_bar() {
-		$data = array(
-			'header_bar' => Modules::run('construction/_static_content', 'header_bar', 'config'),
-		);
-		return $this->load->view('pagelet_header_bar', $data, TRUE);
-	}
+	public function _pagelet_breadcrumb() {
+		$page_list = array();
+		if ($page_id = $this->input->get_post('page_id')) {
+			$page_info = $this->page_model->get($page_id);
+			if ($page_info['return_code'] == API_SUCCESS && !empty($page_info['data'])) {
+				$page_info = $page_info['data'];
+			} else {
+				$page_info = array();
+			}
+			if (!empty($page_info)) {
+				if (isset($page_info['parent_id']) && !empty($page_info['parent_id'])) {
+					$parent_page = $this->page_model->get($page_info['parent_id']);
+					if ($parent_page['return_code'] == API_SUCCESS && !empty($parent_page['data'])) {
+						$parent_page = $parent_page['data'];
+						$page_list[$parent_page['name_' . $this->_current_lang]] = page_url($parent_page);
+					}
+				}
+				$page_list[$page_info['name_' . $this->_current_lang]] = page_url($page_info);
+			}
+		} else if ($product_id = $this->input->get_post('product_id')) {
+			$product = $this->product_model->get($product_id);
+			if ($product['return_code'] == API_SUCCESS && !empty($product['data'])) {
+				$product = $product['data'];
+				$category_id = $product['product_category_id'];
+			} else {
+				$product = array();
+			}
+		} else if ($category_id = $this->input->get_post('category_id')) {
+			// Do nothing, process later
+		}
 
-	public function _pagelet_hotline() {
+		if (isset($category_id) && !empty($category_id)) {
+			$category_info = $this->product_category_model->get($category_id);
+			if ($category_info['return_code'] == API_SUCCESS && !empty($category_info['data'])) {
+				$category_info = $category_info['data'];
+			} else {
+				$category_info = array();
+			}
+			if (!empty($category_info)) {
+				if (isset($category_info['parent_id']) && !empty($category_info['parent_id'])) {
+					$parent_category = $this->product_category_model->get($category_info['parent_id']);
+					if ($parent_category['return_code'] == API_SUCCESS && !empty($parent_category['data'])) {
+						$parent_category = $parent_category['data'];
+						$page_list[$parent_category['category_name_' . $this->_current_lang]] = product_category_url($parent_category);
+					}
+				}
+				$page_list[$category_info['category_name_' . $this->_current_lang]] = product_category_url($category_info);
+			}
+		}
+
+		if (isset($product) && !empty($product)) {
+			$page_list[$product['name_' . $this->_current_lang]] = product_url($product);
+		}
 		$data = array(
-			'mobile' => Modules::run('construction/_static_content', 'mobile', 'config'),
+			'page_list' => $page_list
 		);
-		return $this->load->view('pagelet_hotline', $data, TRUE);
+		return $this->load->view('pagelet_breadcrumb', $data, TRUE);
 	}
 
 }
