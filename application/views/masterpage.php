@@ -14,9 +14,7 @@
 
 		<?php echo asset_link_tag('css/reset.css', 'stylesheet', 'text/css'); ?>
 		<?php echo asset_link_tag('css/default.css', 'stylesheet', 'text/css'); ?>
-		<?php echo asset_link_tag('css/template.css', 'stylesheet', 'text/css'); ?>
-		<?php echo asset_link_tag('css/menu.css', 'stylesheet', 'text/css'); ?>
-		<?php echo asset_link_tag('css/contact.css', 'stylesheet', 'text/css'); ?>
+		<?php echo asset_link_tag('css/templates.css', 'stylesheet', 'text/css'); ?>
 		<?php echo asset_link_tag('css/jquery/jquery-ui-1.8.16.custom.css'); ?>
 		<?php echo asset_link_tag('css/colorbox/colorbox.css'); ?>
 
