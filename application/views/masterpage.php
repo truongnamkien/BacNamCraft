@@ -71,22 +71,9 @@
 						<div id="userWrapper">
 							<?php echo Modules::run('search/_search_form'); ?>
 
-							<ul id="ShopMenu">
-								<li class="mini-cart-wrapper-leave no_background" id="mini-cart-wrapper" ajaxsrc="/checkout_minicart?langId=-1&amp;storeId=10151&amp;catalogId=10051&amp;calculationUsageId=-1&amp;calculationUsageId=-2&amp;calculationUsageId=-7" style="background-image: none; background-position: initial initial; background-repeat: initial initial;"> 
-									<a href="http://www.target.com/checkout_cartview?updatePrices=1&amp;calculationUsageId=-1&amp;calculationUsageId=-2&amp;calculationUsageId=-7&amp;orderId=.&amp;promoCode=&amp;lnk=nav_cart" rel="nofollow" id="mini-cart-icon">
-										<input id="orderQty" value="0" type="hidden">
-										<span class="screen-reader-only">cart</span>
-										<span class="count" style="display: block; width: 0px; padding-right: 0px;"></span>
-										<span class="screen-reader-only" style="display: block;">&nbsp;products&nbsp;</span>
-										<span class="your-cart">your cart</span>		
-									</a>
-
-									<div style="" id="mini-cart"><span class="blocker"></span><div class="summary"></div><div class="items-set"></div></div></li>
-
-
-							</ul>
-							<a class="mini-cart-arrow mini-cart-arrow-leave mini-cart-arrow_mouseleave" rel="nofollow" href="#"></a>
-
+                            <div id="cart_mini">
+								<?php echo Modules::run('product/_pagelet_cart_content'); ?>
+                            </div>
 						</div>
 					</div>
 				</div>
@@ -322,11 +309,6 @@
                             </a>
                         </div>
                         <div class="language">
-                            <div id="cart_mini">
-								<?php echo Modules::run('product/_pagelet_cart_content'); ?>
-                            </div>
-							<div class="clear"></div>
-
 							<div class="hotline">
 								<?php echo Modules::run('navigator/_pagelet_hotline'); ?>
 							</div>
@@ -336,19 +318,6 @@
 
                 <div class="maincontent">
                     <div class="wrap">
-                        <div class="mainnav">
-                            <div class="menu_wrap" id="main-menu">
-
-                                <div class="search">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="mainpage">
-
-                        </div>
-                        <div class="clear"></div>
-
 						<?php //echo Modules::run('navigator/_pagelet_contact'); ?>
                     </div>
                     <div class="clear"></div>
