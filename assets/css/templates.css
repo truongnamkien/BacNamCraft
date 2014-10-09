@@ -3176,7 +3176,6 @@ body {
     left:-9px;
 }
 #Header .globalMenuContainer ul#MainMenu.gb-menu {
-    height:490px;
     margin:0;
     width:188px;
     background:#454545;
@@ -3258,7 +3257,6 @@ body {
 #Header ul#MainMenu.gb-menu li.showMenu .hover .hover_ie7>ul {
     background:url("images/nyBpR9azo.gif") repeat-y 0 0;
     border:0;
-    height:446px;
     padding:0 10px 0 10px;
 }
 #Header ul#MainMenu.gb-menu li.showMenu .hover .hover_ie7>ul.first {

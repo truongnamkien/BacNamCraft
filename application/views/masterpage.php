@@ -64,9 +64,7 @@
 
 
 					<div class="globalMenuContainer changeCartBg">
-						<div class="menuBox active">
-							<a href="#" class="triggerHover">shop all categories</a>
-						</div>
+						<?php echo Modules::run('navigator/_pagelet_product_menu'); ?>
 
 						<div id="userWrapper">
 							<?php echo Modules::run('search/_search_form'); ?>
@@ -79,7 +77,7 @@
 				</div>
 
 				<div id="Content">
-					<?php echo $PAGE_CONTENT; ?>
+					<?php //echo $PAGE_CONTENT; ?>
 				</div>
 				<div class="clear"></div>
 

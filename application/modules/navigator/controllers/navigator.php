@@ -18,21 +18,17 @@ class Navigator extends MY_Controller {
 
 	public function _pagelet_main_menu($pos = 'top') {
 		$top_nav = $this->_main_page_nav();
-		if ($pos == 'top') {
-			$sub_nav = $this->_product_nav();
-			$nav = current($sub_nav);
-			$top_nav[lang('product_product')] = array(
-				'url' => ($pos == 'top' ? '#' : $nav['url']),
-				'class' => ((self::$controller == 'category' || self::$controller == 'product') && self::$method == 'detail' ? 'selected' : '') . ' ' . ($pos == 'top' ? 'fake' : ''),
-				'sub_nav' => $sub_nav,
-			);
-		}
 		$top_nav = array_merge($top_nav, $this->_optional_page_nav());
 		$top_nav[lang('contact_contact')] = array(
 			'url' => site_url('contact'),
 			'class' => (self::$controller == 'contact' ? 'selected' : ''),
 		);
-		$this->load->view('pagelet_main_menu', array('top_nav' => $top_nav, 'pos' => $pos));
+		return $this->load->view('pagelet_main_menu', array('top_nav' => $top_nav, 'pos' => $pos), TRUE);
+	}
+	
+	public function _pagelet_product_menu() {
+		$page_nav = $this->_product_nav();
+		return $this->load->view('pagelet_product_menu', array('page_nav' => $page_nav), TRUE);
 	}
 
 	private function _product_nav() {
