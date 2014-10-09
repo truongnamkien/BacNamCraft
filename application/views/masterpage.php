@@ -77,7 +77,7 @@
 				</div>
 
 				<div id="Content">
-					<?php //echo $PAGE_CONTENT; ?>
+					<?php echo $PAGE_CONTENT; ?>
 				</div>
 				<div class="clear"></div>
 

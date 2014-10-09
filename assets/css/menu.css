@@ -116,7 +116,7 @@ The second part will define the visual look for this menu.
 #ja-cssmenu li ul {
     /*background: url(../../images/grad-3.gif) repeat-x bottom #666666;*/
     /*border: 1px solid #666666;*/
-    background:#eee;
+    background:#FFFFFF;
     margin-left: -10px;
 }
 
@@ -156,7 +156,7 @@ The second part will define the visual look for this menu.
 #ja-cssmenu ul ul li.sfhover,
 #ja-cssmenu ul ul li.havesubchildsfhover,
 #ja-cssmenu ul ul li.havesubchild-activesfhover {
-    background: #ff0000;
+    background: #333;
     color:#fff !important;
     line-height:24px;
     top:0px;

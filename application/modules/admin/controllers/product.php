@@ -30,7 +30,7 @@ class Product extends MY_Inner_Admin_Controller {
     protected function set_validation_rules($action) {
         $rules = array(
             array('field' => 'price', 'label' => lang('product_price'), 'rules' => 'numeric|required|greater_than[0]'),
-            array('field' => 'price_off', 'label' => lang('product_price_off'), 'rules' => "numeric|less_than[{$this->input->post('price')}]|greater_than[0]"),
+            array('field' => 'price_off', 'label' => lang('product_price_off'), 'rules' => "numeric|less_than[{$this->input->post('price')}]"),
             array('field' => 'product_category_id', 'label' => lang('product_product_category_id'), 'rules' => 'numeric|required'),
         );
         $fields = $this->get_multi_lang_fields(array('name'));

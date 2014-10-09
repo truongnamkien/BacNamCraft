@@ -14,10 +14,10 @@
 						<div class="hover_ie7">
 							<ul class="first">
 								<li class="lastl2">
-					<a href="<?php echo $nav['url']; ?>" title="<?php echo $title; ?>">
-						<?php echo $title; ?>
-					</a>
-									
+									<a href="<?php echo $nav['url']; ?>" title="<?php echo $title; ?>">
+										<?php echo $title; ?>
+									</a>
+
 									<ul class="lastNoBorder">
 										<?php foreach ($nav['sub_nav'] as $sub_title => $sub_nav): ?>
 											<li>

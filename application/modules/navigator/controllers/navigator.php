@@ -25,7 +25,7 @@ class Navigator extends MY_Controller {
 		);
 		return $this->load->view('pagelet_main_menu', array('top_nav' => $top_nav, 'pos' => $pos), TRUE);
 	}
-	
+
 	public function _pagelet_product_menu() {
 		$page_nav = $this->_product_nav();
 		return $this->load->view('pagelet_product_menu', array('page_nav' => $page_nav), TRUE);
@@ -131,17 +131,8 @@ class Navigator extends MY_Controller {
 		$photo_path = FALSE;
 		if ($category_id = $this->input->get_post('category_id')) {
 			$url = product_category_url($category_id);
-			$target_type = 'product_category';
-			$target_id = $category_id;
-			$category = $this->product_category_model->get($category_id);
-			if ($category['return_code'] == API_SUCCESS && !empty($category['data'])) {
-				$category = $category['data'];
-				$photo_path = Modules::run('photo/_get_photo_path', $category['url'], 470);
-			}
 		} else if ($product_id = $this->input->get_post('product_id')) {
 			$url = product_url($product_id);
-			$target_type = 'product';
-			$target_id = $product_id;
 			$product = $this->product_model->get($product_id);
 			if ($product['return_code'] == API_SUCCESS && !empty($product['data'])) {
 				$product = $product['data'];
@@ -156,8 +147,6 @@ class Navigator extends MY_Controller {
 			}
 		} else if ($page_id = $this->input->get_post('page_id')) {
 			$url = page_url($page_id);
-			$target_type = 'page';
-			$target_id = $page_id;
 			$contents = $this->content_model->get_where(array('page_id' => $page_id), 'display_order');
 			if ($contents['return_code'] == API_SUCCESS && !empty($contents['data'])) {
 				$contents = $contents['data'];
@@ -284,6 +273,9 @@ class Navigator extends MY_Controller {
 			// Do nothing, process later
 		}
 
+		if ((isset($category_id) && !empty($category_id)) || (isset($product) && !empty($product))) {
+			$page_list[lang('product_product')] = FALSE;
+		}
 		if (isset($category_id) && !empty($category_id)) {
 			$category_info = $this->product_category_model->get($category_id);
 			if ($category_info['return_code'] == API_SUCCESS && !empty($category_info['data'])) {

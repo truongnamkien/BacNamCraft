@@ -8,7 +8,7 @@
 	<?php foreach ($page_list as $title => $url): ?>
 		<span class="separator"> &gt; </span>
 		<span>
-			<a title="<?php echo $title; ?>" href="<?php echo $url; ?>">
+			<a title="<?php echo $title; ?>" href="<?php echo ($url ? $url : '#'); ?>" class="<?php echo ($url ? '' : 'fake'); ?>">
 				<?php echo $title; ?>
 			</a>
 		</span>
