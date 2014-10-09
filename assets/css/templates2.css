@@ -10342,12 +10342,6 @@ div.selectbox-wrapper ul li {
 #Main .textRight {
     text-align:right
 }
-#Main .contentRight {
-    float:right
-}
-#Main .contentLeft {
-    float:left
-}
 #Main .component .tipnote a {
     padding-left:5px
 }
