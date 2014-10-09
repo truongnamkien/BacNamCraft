@@ -165,7 +165,7 @@ class Product extends MY_Outer_Controller {
 		foreach ($data['cart'] as &$item) {
 			$item = $this->_cart_item($item);
 		}
-		$this->load->view('pagelet_cart_content', $data);
+		return $this->load->view('pagelet_cart_content', $data, TRUE);
 	}
 
 	/**

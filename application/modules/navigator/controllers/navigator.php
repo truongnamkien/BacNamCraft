@@ -273,7 +273,7 @@ class Navigator extends MY_Controller {
 			// Do nothing, process later
 		}
 
-		if ((isset($category_id) && !empty($category_id)) || (isset($product) && !empty($product))) {
+		if (self::$controller == 'product' || (isset($category_id) && !empty($category_id)) || (isset($product) && !empty($product))) {
 			$page_list[lang('product_product')] = FALSE;
 		}
 		if (isset($category_id) && !empty($category_id)) {

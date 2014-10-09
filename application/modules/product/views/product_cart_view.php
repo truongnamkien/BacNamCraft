@@ -1,6 +1,4 @@
-<div class="bn_about">
-	<?php echo Modules::run('home/_pagelet_sub_banner', 'cart'); ?>
-</div>
+<?php echo asset_link_tag('css/cart.css', 'stylesheet', 'text/css'); ?>
 
 <div id="cart_content">
 	<?php echo Modules::run('product/_pagelet_cart_view'); ?>
