@@ -18,8 +18,17 @@
 				<?php endforeach; ?>
 			</div>
 
-			<?php echo lang('product_shopping_cart_total_price'); ?>
-			<?php echo format_price($total_price); ?>    
+			<div class="cart_row">
+				<div class="cartCol1">&nbsp;</div>
+				<div class="cartCol2">
+					<p class="itemname">
+						<?php echo lang('product_shopping_cart_total_price'); ?>
+					</p>
+				</div>
+				<div class="cartCol5">
+					<?php echo format_price($total_price); ?>    
+				</div>
+			</div>
 			<div class="clear"></div> 
 
 			<div id="cartsection">

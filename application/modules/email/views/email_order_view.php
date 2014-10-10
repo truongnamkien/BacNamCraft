@@ -32,10 +32,6 @@
             <td><?php echo $order_info['address']; ?></td>
         </tr>
         <tr>
-            <td><?php echo lang('product_order_delivery_time'); ?></td>
-            <td><?php echo $order_info['delivery_time']; ?></td>
-        </tr>
-        <tr>
             <td><?php echo lang('product_checkout_note'); ?></td>
             <td><?php echo $order_info['note']; ?></td>
         </tr>

@@ -214,28 +214,11 @@ li.summaryCol3{
     padding-bottom:7px;
     padding-top:7px;
 }
-input[type="text"],input[type="password"]{
-    border:#d2d9dc 1px solid;
-    width:355px;
-    height:35px;
-    padding-left:3px;
-    line-height:35px;
-    background:#fff;
-}
 input[type="number"]{
     border:#d2d9dc 1px solid;
-    height:35px;
     padding-left:3px;
-    line-height:35px;
     background:#fff;
-}
-#shipping_address input#zipcode{
-    width:100px;
-    height:35px;
-}
-.shippingoption #shipping_address input.phoneno,input#phone1{
-    width:120px;
-    height:35px;
+    width:50px;
 }
 #shipping_address .checkoutevolution .error-summary{
     margin-top:17px;
@@ -419,14 +402,6 @@ p.error-msg,#recOrder-acct p.error-msg,.signinCart.thankyouContentLeft p.error-m
 }
 select.error-msg{
     background:#f9f5d1;
-}
-input:focus{
-    box-shadow:0 0 5px #83acd6;
-    outline:none;
-}
-input[type=text]:focus,input[type=password]:focus{
-    background:#fff!important;
-    color:#000!important;
 }
 #zipcode{
     width:100px;
@@ -1254,27 +1229,6 @@ abbr{
     position:relative;
     float:left;
 }
-input.qtynumber{
-    border:1px solid #ccc;
-    background:url(../../../checkout/images/checkoutbg_sprite.png) repeat-x;
-    background-position:0 -69px;
-    height:33px;
-    width:40px;
-    padding:0;
-    line-height:32px;
-    text-align:center;
-}
-input.espqtynumber{
-    border:1px solid #ccc;
-    background:url(../../../checkout/images/checkoutbg_sprite.png) repeat-x;
-    background-position:0 -69px;
-    height:33px;
-    width:40px;
-    padding:0;
-    line-height:32px;
-    text-align:center;
-    background:#fff;
-}
 .itemlinks{
     clear:both;
 }
@@ -1704,14 +1658,6 @@ a.button{
     font-weight:bold;
     margin-bottom:5px;
 }
-#addressVerification form#avs ul.addressList li input{
-    clear:left;
-}
-.avs-sug form#avs ul.addressList li input{
-    margin:22px 0 0;
-    float:left;
-    margin-left:-3px;
-}
 .avs-sug form#avs fieldset.noborder{
     margin-top:15px;
 }
@@ -1724,12 +1670,6 @@ a.button{
 }
 #addAddress div.button-row{
     margin-top:20px;
-}
-form .input-step input[type="radio"]+label,form .input-step input[type="checkbox"]+label{
-    color:#333;
-    float:left;
-    font-size:12px;
-    font-weight:400;
 }
 .button.tier-2{
     background-position:center -100px;
@@ -1757,35 +1697,10 @@ form .input-step input[type="radio"]+label,form .input-step input[type="checkbox
 .city{
     float:left;
 }
-input.shipingCityName{
-    border:1px solid #D2D9DC;
-    height:35px;
-    width:167px;
-}
 .state{
     float:left;
     width:58px;
     min-height:68px;
-}
-input.shipingStateName{
-    border:1px solid #D2D9DC;
-    height:35px;
-    width:52px;
-}
-.stateCity .state,.stateCity .zip_code{
-    margin-left:10px;
-}
-.zip_code{
-    float:left;
-    width:110px;
-}
-input.shipingzipcode{
-    border:1px solid #D2D9DC;
-    height:35px;
-    width:106px;
-}
-.shippingZip.editadd{
-    display:none;
 }
 .editadd .stateCity{
     display:block;
@@ -1975,10 +1890,6 @@ body .egiftcardtextbox{
     padding-top:25px;
     clear:both;
 }
-.storeschkfeild1{
-    float:left;
-    width:306px;
-}
 .pickup{
     color:#333;
     font-size:12px;
@@ -1992,22 +1903,6 @@ body .egiftcardtextbox{
     font-weight:bold;
     padding-bottom:7px;
     padding-top:12px;
-}
-#storePickFF input{
-    border:1px solid #D2D9DC;
-    height:35px;
-    width:290px;
-}
-.storeschkfeild2{
-    float:left;
-    width:320px;
-    padding-left:20px;
-}
-.storeschkfeild1.storeslogin .pickup span{
-    font-weight:normal;
-}
-.storeschkfeild2.ananamous{
-    padding-top:47px;
 }
 .privacy-policy{
     clear:both;
@@ -2164,9 +2059,6 @@ body .egiftcardtextbox{
 .address_normal{
     float:left;
 }
-.fieldset-content .input-step{
-    clear:both;
-}
 .shipping-heading{
     color:#000;
 }
@@ -2191,9 +2083,6 @@ body .egiftcardtextbox{
     border-top:1px dotted #ccc!important;
     margin-top:15px;
     padding:10px;
-}
-.input-step .name{
-    padding-left:10px;
 }
 p .checkoutsignIn{
     font-size:12px;
@@ -2256,20 +2145,11 @@ p .checkoutsignIn{
 #payment-form .codebilling{
     margin-top:0!important;
 }
-.checkout fieldset .pay-gftform input[type="text"],.checkout fieldset .pay-gftform input[type="number"]{
-    width:121px;
-}
-.checkout fieldset .pay-gftform input[type="text"].review-email,.checkout fieldset .pay-gftform input[type="number"].review-email,.checkout fieldset .pay-gftform input[type="text"]#giftCardAccess,.checkout fieldset .pay-gftform input[type="number"]#giftCardAccess{
-    width:145px;
-}
 .checkout fieldset .pay-gftform #giftCardAccess{
     width:85px;
 }
 .pay-gftform{
     float:left;
-}
-.pay-gftform .input-step .input-field{
-    margin:0 25px 0 0;
 }
 #check-balance{
     display:inline-block;
@@ -2320,15 +2200,6 @@ fieldset#gift-card-payment{
 }
 .pay-email h2{
     padding:20px 9px;
-}
-.checkout form .pay-email-note input[type="text"],.checkout form .pay-email-note input[type="number"]{
-    margin-right:10px;
-}
-#billing input.chk-drop[type="checkbox"]{
-    margin-left:9px;
-    margin-right:8px;
-    margin-top:2px;
-    float:left;
 }
 .pay-lftbox{
     float:left;
@@ -2408,14 +2279,6 @@ fieldset#gift-card-payment{
 .DebitPin label{
     font-weight:bold;
     display:block;
-}
-input[type="text"].securityCode,input[type="number"].securityCode,#tcPinNum{
-    border:1px solid #D2D9DC;
-    height:35px;
-    margin-top:3px;
-    width:64px;
-    border-radius:3px 3px 3px 3px;
-    padding-left:5px;
 }
 .billingcard{
     border-radius:3px 3px 3px 3px;
@@ -2916,62 +2779,6 @@ p.saveCard,.saveCard.creditCards{
     font-size:26px;
     font-weight:bold;
 }
-.reviewPassword .input-step.chk_field{
-    float:left;
-    margin-right:30px;
-    width:150px;
-    margin-bottom:5px;
-}
-.rpin{
-    float:left;
-    width:124px;
-}
-.reviewOrder{
-    width:150px;
-    margin-left:6px;
-}
-.delvrydit{
-    padding-left:8px;
-}
-.rop{
-    float:left;
-}
-.ropedit{
-    float:left;
-    font-weight:bold;
-    margin:0 0 0 10px;
-}
-.ropmargnnul{
-    margin-top:0;
-}
-.accessNumber{
-    float:left;
-    margin-left:12px;
-    width:246px;
-}
-.accessNumber img,.cards-Number img{
-    position:relative;
-    top:4px!important;
-    left:6px;
-}
-.card-inactive{
-    float:left;
-    margin-left:8px;
-    margin-top:22px;
-    width:22px;
-}
-.cards-Number{
-    float:left;
-    width:179px;
-}
-.cardPrice{
-    font-weight:bold;
-    font-size:12px;
-    padding-left:6px;
-}
-.CardDetails{
-    width:500px;
-}
 #gift-card-payment{
     position:relative;
 }
@@ -3049,47 +2856,6 @@ p.saveCard,.saveCard.creditCards{
     margin:0 0 15px 0;
     line-height:auto;
 }
-#billing input.chk-drop[type="checkbox"]{
-    margin-left:9px;
-    margin-right:8px;
-    margin-top:2px;
-    float:left;
-}
-.tgt-img{
-    margin-left:10px;
-    float:left;
-    margin-top:-11px;
-}
-.pay-rgt-txt-mrg22{
-    margin-top:-3px;
-}
-.pay-rtbox{
-    color:#666;
-    float:left;
-    font-size:12px;
-    margin-left:15px;
-    margin-top:1px;
-}
-#billing fieldset{
-    margin-bottom:5px;
-}
-.cardnumber-chk1{
-    width:390px;
-    float:left;
-    margin-left:30px;
-    margin-bottom:10px;
-}
-.billingcard{
-    border-radius:3px 3px 3px 3px;
-}
-#newAddress .code3{
-    color:#666;
-    width:115px;
-    font-size:12px;
-    font-weight:bold;
-    margin-left:65px;
-    margin-top:-55px;
-}
 .nameoncard{
     border-radius:3px 3px 3px 3px;
 }
@@ -3127,30 +2893,6 @@ p.saveCard,.saveCard.creditCards{
     font-weight:bold;
     padding-top:10px;
     color:#000;
-}
-.input-container input{
-    padding:0 10px 0 5px;
-    width:170px;
-}
-.input-container.editCard input{
-    height:35px;
-    line-height:28px;
-    background:url("../../../checkout/images/creditcard_new.png") 0 75px no-repeat;
-}
-.input-container.editCard.TargetCard input{
-    background-position:0 35px;
-}
-.input-container.editCard.Amex input{
-    background-position:0 183px;
-}
-.input-container.editCard.Visa input{
-    background-position:0 75px;
-}
-.input-container.editCard.Master input{
-    background-position:0 110px;
-}
-.input-container.editCard.Discover input{
-    background-position:0 146px;
 }
 .textboxCardnumber{
     border:1px solid #D2D9DC;
@@ -3207,10 +2949,6 @@ p.saveCard,.saveCard.creditCards{
     margin-bottom:5px;
     margin-top:35px;
     border-top:1px dotted #9EA9B2;
-}
-.input-container{
-    width:140px;
-    float:left;
 }
 .rightLine{
     color:#666;
@@ -3525,10 +3263,6 @@ p.saveCard,.saveCard.creditCards{
     margin-top:35px;
     border-top:1px dotted #9EA9B2;
 }
-.input-container{
-    width:140px;
-    float:left;
-}
 .rightLine{
     color:#666;
 }
@@ -3742,14 +3476,6 @@ div.giftoption{
 #billing_address .ShippingDetails>div{
     padding:5px 0 7px;
 }
-.flnamewrap .input-field{
-    float:left;
-    margin-right:35px;
-}
-.flnamewrap input{
-    width:160px;
-    display:block;
-}
 .accessNumber #apply-gift-card,.pay-gftform #apply-saved-gift-card{
     background:none!important;
     border:none!important;
@@ -3829,15 +3555,6 @@ div.giftoption{
 .row .buttonText{
     margin-left:15px!important;
 }
-#finditinaStore input[type="text"]#zipCode,#finditinaStore input[type="number"]#zipCode{
-    width:55px;
-}
-#finditinaStore input#city[type="text"]{
-    width:130px;
-}
-#finditinaStore input[type="text"],#finditinaStore input[type="number"]{
-    line-height:13px;
-}
 #findStore .qty{
     float:none;
 }
@@ -3896,9 +3613,6 @@ div.giftoption{
     padding:5px 5px 0 7px;
     width:122px;
     text-indent:-1px;
-}
-input[type="text"]#ccCode,input[type="text"]#password_tcPinNum,input[type="number"]#ccCode,input[type="number"]#password_tcPinNum{
-    width:70px;
 }
 .shiphome .newline{
     color:#666;
@@ -4394,33 +4108,11 @@ input[type="text"]#ccCode,input[type="text"]#password_tcPinNum,input[type="numbe
 .widgets_sec .giftoption strong.crdtxt{
     line-height:16px;
 }
-#findStore .tileInfo .qty-lbl-inpt .qty-lbl{
-    margin-right:39px;
-    width:53px;
-}
-#FindinStore #pickUpInStoreQty input.quantity{
-    padding:0;
-}
-#FindinStore ul.findStore.input-step li.input-field label{
-    font-size:12px;
-    font-weight:700;
-    margin:0 0 12px;
-}
-#FindinStore .findStore .button{
-    margin:24px 0 0 -16px;
-}
 fieldset#gift-card sup{
     margin-left:-5px;
 }
 fieldset#gift-card div.pay-lftbox{
     margin-top:-4px;
-}
-.input-field.TCHolder span.tipnoteTrigger.tipType-info{
-    margin-left:2px;
-    margin-top:15px;
-}
-.input-field.TCHolder p.error-msg{
-    z-index:100;
 }
 .right-widget .cartpromocode .promo_textbox{
     width:100px;
@@ -5168,11 +4860,6 @@ a#edit-billing-address{
     padding-bottom:9px;
     list-style:none;
 }
-#overlay ul.subtotal-line-item .cartfaster input.cartShipping{
-    float:left;
-    display:block;
-    margin-top:4px;
-}
 #overlay .chossec .saveandContinue{
     margin-bottom:5px;
 }
@@ -5200,39 +4887,14 @@ a#edit-billing-address{
 .widgets_sec .giftoption strong.crdtxt{
     line-height:16px;
 }
-.overlay .cartLinks.saveContinuecart a span.continuelink{
-    margin-right:10px;
-}
 .fiatsImg{
     background-position:-331px -864px!important;
-}
-#findStore .tileInfo .qty-lbl-inpt .qty-lbl{
-    margin-right:39px;
-    width:53px;
-}
-#FindinStore #pickUpInStoreQty input.quantity{
-    padding:0;
-}
-#FindinStore ul.findStore.input-step li.input-field label{
-    font-size:12px;
-    font-weight:700;
-    margin:0 0 12px;
-}
-#FindinStore .findStore .button{
-    margin:24px 0 0 -16px;
 }
 fieldset#gift-card sup{
     margin-left:-5px;
 }
 fieldset#gift-card div.pay-lftbox{
     margin-top:-4px;
-}
-.input-field.TCHolder span.tipnoteTrigger.tipType-info{
-    margin-left:2px;
-    margin-top:15px;
-}
-.input-field.TCHolder p.error-msg{
-    z-index:100;
 }
 #signaturemodal .itemoptionsdata .cartCol1{
     margin-left:3px;
@@ -5535,12 +5197,6 @@ img{
     background-position:9px 13px!important;
     height:13px;
 }
-#finditinaStore input#zipCode{
-    line-height:13px;
-}
-.checkout #finditinaStore input.error-msg{
-    background:none repeat scroll 0 0 rgba(0,0,0,0)!important;
-}
 .summarycolstate{
     font-weight:bold;
     color:#333;
@@ -5735,12 +5391,6 @@ html[xmlns] .bundlecartdata.cartdata.clearfix{
 }
 .bundle-cart .bundlecartdata .offermsg.three-col .col-1{
     width:32.6%;
-}
-.bundle-cart .bundlecartdata .offermsg.three-col div input{
-    margin:3px 2px 0 0;
-}
-.ie .bundle-cart .bundlecartdata .offermsg.three-col div input{
-    margin-top:0;
 }
 .bundle-cart .bundlecartdata .offermsg.three-col .col-2>ul{
     width:73%;
@@ -6308,9 +5958,6 @@ html[xmlns] .bundlecartdata.cartdata.clearfix{
 #checkoutAgree label span{
     vertical-align:top;
 }
-#checkoutAgree input[type="checkbox"]{
-    margin:0 3px 3px 4px;
-}
 .sign-delivery{
     background-color:#FAF6D1;
     border-bottom:1px dotted #9EA9B2;
@@ -6686,14 +6333,6 @@ p.store a.needFaster{
     width:190px;
     float:left;
 }
-#checkoutbaby360InputBlock .startSending{
-    float:left;
-    width:146px;
-    font-weight:bold;
-}
-#checkoutbaby360InputBlock .startSending a.calendarIcon{
-    margin-top:1px;
-}
 .calendarIcon:focus{
     outline:1px dotted #000!important;
 }
@@ -6704,9 +6343,6 @@ div.datepicker{
     border:1px solid green;
     z-index:999999;
     top:242px!important;
-}
-#checkoutbaby360InputBlock{
-    width:300px;
 }
 .overlayeditshipping{
     diaplay:block;
@@ -7072,9 +6708,6 @@ div.datepicker{
 .reviewItemnew .paymentltrcard{
     width:146px!important;
 }
-#QuickView #qinfo .colors .input-step{
-    position:relative;
-}
 #choiceFreeGift{
     width:720px;
 }
@@ -7228,90 +6861,6 @@ div.datepicker{
 }
 .cartItemsContainer .serviceplansec .noteitem{
     font-size:11px;
-}
-.cartItemsContainer .freeGift input.selGift:focus{
-    border:1px dotted #000;
-}
-input[type=radio]:focus,input[type=checkbox]:focus{
-    outline:1px dotted #000;
-}
-#digitldownload h2{
-    margin:0;
-}
-.overlay #digitldownload h2{
-    margin:22px 0 0 0;
-    color:#000;
-}
-.digidownloadcontent{
-    border-top:1px dashed #C6D5DE;
-    margin:20px 0;
-    padding:10px 0 13px;
-    width:652px;
-}
-.overlay .digidownloadcontent{
-    width:653px;
-    margin-top:14px;
-    padding-bottom:33px;
-}
-.overlay h2.signheading{
-    font-size:30px;
-}
-.digidownloadcontent .egiftcardimage{
-    margin-right:20px;
-}
-.digidownloadcontent .ecardimg{
-    height:138px;
-    margin:0 13px 10px 0;
-    padding:0;
-    width:138px;
-}
-.digidownloadcontent .egiftcardtextbox{
-    width:279px!important;
-}
-.digidownloadcontent .egiftcardshippingdetails{
-    width:290px;
-    margin-right:0;
-}
-.overlay .digidownloadcontent .egiftcardshippingdetails{
-    width:293px;
-}
-.digiemaillbl{
-    color:#333;
-    font-size:12px;
-    font-weight:bold;
-    margin-bottom:7px;
-    margin-top:0!important;
-}
-.digiemailnote{
-    color:#666;
-    font-size:11px;
-    font-weight:bold;
-    line-height:14px;
-    margin-top:15px;
-}
-.digidownloadcontent #zipcode{
-    margin-bottom:0!important;
-}
-.digiemailnote1{
-    color:#666;
-    font-weight:bold;
-    font-size:11px;
-    line-height:14px;
-    margin-top:7px;
-}
-.digiitemtitle{
-    color:#000;
-    font-weight:bold;
-    font-size:13px;
-    line-height:14px;
-    margin-top:7px;
-}
-.digidelivermsg{
-    color:#333;
-    font-weight:normal;
-    font-size:11px;
-    line-height:14px;
-    margin-top:6px;
 }
 .digitaleyebrow{
     font-size:10px;
@@ -7572,12 +7121,6 @@ p.subscribePayment{
 .paymentltrcard{
     width:240px!important;
 }
-.overlay .flnamewrap input.textbox{
-    width:160px!important;
-}
-.ie9 .currentshipingaddress{
-    margin-top:20px;
-}
 .handlingFee{
     color:#333;
     font-size:10px;
@@ -7630,84 +7173,10 @@ fieldset#gift-card div.pay-lftbox{
 .ie .shippingMainDetails .shippingAddress1{
     width:200px!important;
 }
-.swatches{
-    float:left;
-    clear:both;
-    height:20px;
-    overflow:hidden;
-    margin:7px 0 0;
-    position:relative;
-}
-.swatches li{
-    float:left;
-    margin:0;
-    padding:2px;
-    width:12px;
-    height:12px;
-    overflow:hidden;
-    background:url("../../../tff/images/swatch.png") no-repeat scroll -98px 1px transparent;
-}
-.swatches li input[type="radio"]{
-    top:-38px;
-    z-index:0;
-    height:44px;
-    cursor:pointer;
-    position:absolute;
-    margin:10px 0 0 0!important;
-    width:auto;
-    float:none!important;
-}
-#QuickView #qinfo .colorValHolderQI{
-    color:#D32323;
-    font-family:arial;
-    font-size:11px;
-    font-weight:normal;
-}
-.baby360Subscribe{
-    width:256px;
-    border:1px solid #d9ebf9;
-    background-color:#d9ebf9;
-    clear:both;
-    margin-bottom:11px;
-    -moz-border-radius:10px 10px 0 0;
-    border-radius:10px 10px 10px 10px;
-}
-.baby360Subscribe .baby360TextBlock{
-    margin:2px;
-    background-color:#ebf4fc;
-    height:48px;
-    padding:6px 0 0 5px;
-    -webkit-border-radius:8px;
-    -moz-border-radius:8px;
-    border-radius:8px;
-}
-.baby360Subscribe .baby360TextBlock p,.baby360Subscribe .baby360InputBlock label.small{
-    font-size:12px;
-    font-weight:bold;
-    color:#000;
-}
-.baby360Subscribe .baby360InputBlock.show,.baby360InputBlock.subscribeQIInstance.show{
-    visibility:visible!important;
-    display:block!important;
-}
-.baby360Subscribe .baby360TextBlock p{
-    margin:0!important;
-    padding:0!important;
-}
-.baby360Subscribe .baby360TextBlock p input{
-    vertical-align:middle;
-}
-input[type="checkbox"]{
-    margin:3px 3px 3px 4px;
-}
 .billing_order_msg{
     width:auto;
     float:left;
     margin:20px 22px 0 0;
-}
-#paypal-show #checkOutWithPaypal.chk-drop{
-    display:inline;
-    margin-top:12px!important;
 }
 .accessNumber #apply-gift-card{
     font-family:arial;
@@ -7729,258 +7198,6 @@ input[type="checkbox"]{
 }
 .storpikupsec .delivery{
     color:#333;
-}
-#checkoutbaby360InputBlock .input-required-mark{
-    color:#ba3027;
-}
-#checkoutbaby360InputBlock .howOften{
-    text-transform:lowercase;
-    font-weight:bold;
-}
-#reviews .paybillsec.margnbtm.reviewItemnew{
-    margin-bottom:0;
-}
-.servsec{
-    float:left;
-    width:100%;
-}
-.serviceplansec .servsec{
-    float:left;
-    width:585px;
-}
-.bldtxt{
-    font-weight:bold;
-}
-.serviceplansec.crtpg{
-    padding:10px 0 0 10px;
-}
-.serviceplansec.crtpg.clearfix{
-    margin-left:95px;
-    margin-right:0;
-}
-p.bldtxt.noteitem{
-    margin-left:35px;
-}
-.bldtxt.noteitem span{
-    color:#666;
-}
-.serviceplansec{
-    clear:both;
-    font-size:12px;
-    margin:0 10px 5px 5px;
-}
-#addtocart.overlay .modalType-addToCart .serviceplansec{
-    border-top:2px solid #CCC;
-    padding-top:12px;
-}
-#addtocart.overlay #sevicePlanAddForm .addtocartsrvpln .cartCol3{
-    float:left;
-    font-size:12px;
-    margin:3px 77px 9px 17px;
-    width:235px;
-}
-.srvimgsec{
-    float:left;
-    height:25px;
-    margin-right:10px;
-    width:25px;
-}
-.srvtxt{
-    color:#333;
-    font-size:12px;
-    font-weight:bold;
-}
-.srvlnk{
-    color:#04C!important;
-    font-size:12px;
-    font-weight:bold;
-}
-.servsec .tickmark{
-    background-position:-179px -138px;
-    float:left;
-    height:18px;
-    margin:0 3px 0 0;
-    width:24px;
-}
-.serviceplansec .cartCol4{
-    width:134px;
-    margin-right:0;
-}
-#QuickView #qinfo .butonblock .addtoCart.button{
-    background-position:-178px -1138px!important;
-}
-.cartItemsContainer .cartCol3{
-    margin-bottom:12px;
-}
-#extendedsrvpln .srvplnhorizntl .qty{
-    padding-top:11px;
-}
-#extendedsrvpln .cartCol4{
-    padding-top:13px;
-    width:90px;
-    margin-right:20px;
-}
-.serviceprominent .extnradiosec{
-    width:293px;
-    float:left;
-    margin:10px 0;
-    width:300px;
-}
-.serviceprominent .extnpricsec{
-    margin:22px 8px 0 0;
-    float:right;
-}
-.serviceprominent #servicePrice{
-    float:right;
-}
-.greyfntpln{
-    color:#666;
-    font-size:11px;
-    margin-left:18px;
-}
-.covrinfo{
-    color:#000;
-    font-size:11px;
-    font-weight:bold;
-    margin-left:16px;
-}
-.itemoptions{
-    color:#000;
-}
-.itemoptions .srvplnhorizntl{
-    padding:2px 10px 7px;
-    background:none repeat scroll 0 0 #F9F9F9;
-}
-.botmborder{
-    border-bottom:1px dashed #C6D5DE;
-    margin:0 10px;
-    padding:2px 0 7px;
-}
-.serviceprominent .cartLinks{
-    margin:20px 14px 30px 0;
-    padding:5px 5px 0 0;
-}
-#modal_giftwrap_esp_form .itemgiftoptions ul input[type="checkbox"]{
-    margin:0 3px 3px 4px;
-}
-#modal_giftwrap_esp_form .overlay .cartLinks.saveContinuecart a span.continuelink{
-    margin-right:11px;
-}
-#Main .shippingitemlist .ccsection{
-    margin-left:18px;
-}
-#Main #primary .zipcodesec p{
-    float:left;
-    margin:20px 20px 0 0;
-}
-#reviews #order-summary{
-    border-top:1px dashed #CCC;
-    margin-top:15px;
-}
-#reviews #order-summary .chk-items{
-    background-color:#FFF;
-}
-.email-shipping .spamemil{
-    color:#333;
-    font-size:18px;
-    font-weight:bold;
-    margin-bottom:-14px;
-}
-.email-shipping .spamemil .mailspam{
-    color:#666;
-    font-size:10px;
-    font-weight:normal;
-    margin-left:15px;
-    display:inline-block;
-    vertical-align:middle;
-}
-.email-shipping .emailmesec{
-    margin:20px 0 0;
-}
-.email-shipping .emailmesec .review-email{
-    margin-right:12px;
-}
-.reviewEmail .emailmesec input#email1.review-email{
-    float:left;
-    margin-bottom:10px;
-}
-.reviewEmail .emailmesec p.error-msg{
-    clear:none;
-    padding-top:10px;
-}
-.review-email{
-    border:1px solid #D2D9DC;
-    height:35px;
-    margin:0 5px 0 0;
-    width:145px!important;
-}
-.futureVisit,.emailme{
-    color:#333;
-    font-size:12px;
-    font-weight:bold;
-    margin-left:5px;
-}
-.retypePassword{
-    color:#666;
-    font-style:italic;
-    margin-left:5px;
-}
-.email-shipping{
-    margin:14px 0 0 10px!important;
-}
-#reviews .email-shipping .emailmesec .targetPromotions{
-    float:none!important;
-}
-#reviewPasswordSec.reviewPassword .input-step.chk_field{
-    margin-right:8px;
-    margin-bottom:20px;
-}
-#reviewPasswordSec.review-password{
-    margin:0 9px 24px -2px;
-}
-.email-shipping #reviewPasswordSec{
-    display:none;
-}
-.reviewEmail .createacc{
-    margin-bottom:20px;
-    clear:left;
-}
-.reviewEmail .reviewPassword{
-    margin-top:-5px;
-}
-#reviewPasswordSec p.error-msg{
-    left:10px;
-}
-.billRight{
-    float:right;
-}
-.billLeft{
-    float:left;
-}
-#reviewPasswordSec .opt{
-    color:#666;
-}
-.emailme{
-    margin-top:10px;
-    position:absolute;
-}
-.futureVisit{
-    margin-top:2px;
-    position:absolute;
-}
-.tooltipBox h2,.tipnoteTitle,#summaryCore li.summaryCol .summItem h2.tipnoteTitle,#reviews .tooltipBox h2{
-    display:block;
-    margin-bottom:5px;
-    font-size:11px;
-    font-weight:bold;
-    padding-left:0;
-}
-#promotions_QI{
-    margin-top:5px;
-}
-.tipnoteTitle{
-    color:#000;
-    font-weight:bold;
 }
 .tooltipBox .tipnoteTitle{
     display:block;

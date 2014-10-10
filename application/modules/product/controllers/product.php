@@ -47,7 +47,6 @@ class Product extends MY_Outer_Controller {
 			array('field' => 'email', 'label' => lang('product_checkout_email'), 'rules' => 'trim|valid_email'),
 			array('field' => 'mobile', 'label' => lang('product_checkout_mobile'), 'rules' => 'trim|strip_tags|numeric|required'),
 			array('field' => 'address', 'label' => lang('product_checkout_shipping_address'), 'rules' => 'trim|htmlspecialchars|strip_tags|required'),
-			array('field' => 'delivery_time', 'label' => lang('product_order_delivery_time'), 'rules' => 'trim'),
 			array('field' => 'note', 'label' => lang('product_checkout_note'), 'rules' => 'trim|htmlspecialchars|strip_tags'),
 		);
 		if (!$first_time) {
@@ -59,7 +58,6 @@ class Product extends MY_Outer_Controller {
 				'fullname' => $this->input->post('fullname'),
 				'mobile' => $this->input->post('mobile'),
 				'address' => $this->input->post('address'),
-				'delivery_time' => $this->input->post('delivery_time'),
 				'note' => $this->input->post('note'),
 			);
 			$order = $this->order_model->create($order_data);

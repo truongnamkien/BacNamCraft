@@ -76,7 +76,6 @@ $lang['product_order_email'] = 'Email';
 $lang['product_order_mobile'] = 'Mobile';
 $lang['product_order_address'] = 'Địa chỉ giao hàng';
 $lang['product_order_note'] = 'Ghi chú';
-$lang['product_order_delivery_time'] = 'Thời gian giao nhận';
 $lang['product_order_discount'] = 'Thêm/giảm giá';
 $lang['product_order_discount_note'] = 'Lý do thêm/giảm giá';
 

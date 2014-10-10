@@ -36,10 +36,6 @@
                     <?php echo $order['address']; ?>
                 </div>
                 <div class="form-group">
-                    <label class="control-label w250"><?php echo lang('product_order_delivery_time'); ?></label>
-                    <?php echo $order['delivery_time']; ?>
-                </div>
-                <div class="form-group">
                     <label class="control-label w250"><?php echo lang('product_order_created_at'); ?></label>
                     <?php echo date($this->config->item('date_time_format'), $order['created_at']); ?>
                 </div>
