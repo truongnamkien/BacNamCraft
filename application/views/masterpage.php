@@ -81,6 +81,7 @@
 
 				<div id="Footer">
 					<div id="PageNotes" class="pagenotes">
+						<?php echo Modules::run('navigator/_pagelet_subscribe'); ?>
 						<div class="footerlogo">
 							<a href="<?php echo site_url(); ?>">
 								<span class="screen-reader-only"><?php echo PAGE_TITLE; ?></span>
@@ -98,6 +99,7 @@
 				</div>
 			</div>
 		</div>
+		<?php echo Modules::run('navigator/_pagelet_back_top'); ?>
     </body>
 </html>
 

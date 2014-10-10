@@ -27,11 +27,5 @@ $config['page_content_photo_default_width'] = array(
 
 $config['language_list'] = array('vietnamese');
 $config['banner_category'] = array(
-    'static_content_banner_home' => array('width' => 590, 'height' => 390),
-    'static_content_banner_product' => array('width' => 905, 'height' => 285),
-    'static_content_banner_contact' => array('width' => 1170, 'height' => 350),
-    'static_content_banner_cart' => array('width' => 1170, 'height' => 350),
-    'static_content_banner_home_right_1' => array('width' => 300, 'height' => 390),
-    'static_content_banner_home_right_2' => array('width' => 300),
-    'static_content_banner_home_right_3' => array('width' => 300),
+    'static_content_banner_home' => array('width' => 950, 'height' => 400),
 );

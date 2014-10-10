@@ -56,31 +56,4 @@ class Home extends MY_Outer_Controller {
         return $this->load->view('pagelet_banner', $data, TRUE);
     }
 
-    public function _pagelet_sub_banner($category) {
-        $banner_category = $this->config->item('banner_category', 'content_page');
-        if (!isset($banner_category['static_content_banner_' . $category])) {
-            return FALSE;
-        }
-
-        $photo_list = $this->static_content_model->get_where(array('page' => 'home', 'content_name' => 'static_content_banner_' . $category));
-        if ($photo_list['return_code'] == API_SUCCESS && !empty($photo_list['data'])) {
-            $photo_list = $photo_list['data'];
-        } else {
-            $photo_list = array();
-        }
-        if (empty($photo_list)) {
-            return FALSE;
-        }
-        $photo = array_rand($photo_list);
-        $photo = array_merge($photo_list[$photo]);
-
-        $photo_content = json_decode($photo['content'], TRUE);
-        $photo['photo'] = $photo_content['photo'];
-        unset($photo['content']);
-        $photo = array_merge($photo, $banner_category['static_content_banner_' . $category]);
-        $data = array('photo' => $photo);
-
-        return $this->load->view('pagelet_sub_banner', $data, TRUE);
-    }
-
 }

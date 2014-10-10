@@ -4494,6 +4494,7 @@ a:hover,a:focus{
     width:950px;
     height:auto;
     clear:both;
+    margin: auto;
 }
 #Main{
     clear:both;

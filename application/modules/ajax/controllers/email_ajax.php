@@ -13,10 +13,10 @@ class Email_Ajax extends MY_Ajax {
     }
 
     public function submit() {
-        $this->form_validation->set_rules('email', 'lang:static_content_home_email', 'trim|required|valid_email');
+        $this->form_validation->set_rules('subscribe_email', 'lang:static_content_home_email', 'trim|required|valid_email');
 
         if ($this->form_validation->run()) {
-            $email = $this->input->get_post('email');
+            $email = $this->input->get_post('subscribe_email');
             $customer_email = $this->customer_email_model->get_where(array('email' => $email));
             if ($customer_email['return_code'] == API_SUCCESS && !empty($customer_email['data'])) {
                 $customer_email = array_shift($customer_email['data']);

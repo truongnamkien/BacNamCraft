@@ -18,7 +18,7 @@ $lang['product_display_order'] = 'Thứ tự hiển thị';
 $lang['product_photo'] = 'Hình ảnh';
 $lang['product_status'] = 'Tình trạng';
 $lang['product_created_at'] = 'Nhập về';
-$lang['product_hot'] = 'Sản phẩm mới';
+$lang['product_hot'] = 'Sản phẩm nổi bật';
 $lang['product_sold_out'] = 'Hết hàng';
 
 $lang['product_photo_create'] = 'Thêm hình ảnh';
