@@ -18,8 +18,6 @@ class Config extends MY_Admin_Controller {
             'facebook_page' => 'text',
             'keyword' => 'text',
             'description' => 'text',
-            'yahoo' => 'text',
-            'skype' => 'text',
         );
     }
 

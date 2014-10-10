@@ -1,17 +1,11 @@
-<?php echo asset_link_tag('css/category.css', 'stylesheet', 'text/css'); ?>
-<?php echo asset_link_tag('css/home.css', 'stylesheet', 'text/css'); ?>
-
-
 <div class="product_category">
-    <?php echo Modules::run('product/_pagelet_hot_products'); ?>
+    <?php //echo Modules::run('product/_pagelet_hot_products'); ?>
 </div>
 
 <div class="w_home mb20">
 
     <div class="w300">
-    <?php echo Modules::run('home/_pagelet_sub_banner', 'home_right_2'); ?>
-    <?php echo Modules::run('home/_pagelet_sub_banner', 'home_right_3'); ?>
-        <?php echo Modules::run('navigator/_pagelet_connect', 'home'); ?>
+        <?php //echo Modules::run('navigator/_pagelet_connect', 'home'); ?>
     </div>        
 </div>
 
@@ -22,3 +16,6 @@
         });
     </script>
 <?php endif; ?>
+
+	
+					<?php //echo Modules::run('navigator/_pagelet_subscribe'); ?>

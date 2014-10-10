@@ -38,8 +38,6 @@ $lang['static_content_config_mobile'] = 'Mobile';
 $lang['static_content_config_facebook_page'] = 'Page Facebook';
 $lang['static_content_config_keyword'] = 'Từ khóa cho web';
 $lang['static_content_config_description'] = 'Mô tả cho web';
-$lang['static_content_config_yahoo'] = 'Nick Yahoo';
-$lang['static_content_config_skype'] = 'Nick Skype';
 
 $lang['static_content_banner_home'] = 'Banner Trang chủ';
 $lang['static_content_banner_product'] = 'Banner trang Sản phẩm';

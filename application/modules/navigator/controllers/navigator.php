@@ -199,19 +199,6 @@ class Navigator extends MY_Controller {
 		return $this->load->view('pagelet_back_top', array(), TRUE);
 	}
 
-	public function _pagelet_contact() {
-		$data = array(
-			'email' => FALSE,
-			'mobile' => FALSE,
-			'facebook_page' => FALSE,
-		);
-		foreach ($data as $key => &$value) {
-			$value = Modules::run('construction/_static_content', $key, 'config');
-		}
-
-		return $this->load->view('pagelet_contact', $data, TRUE);
-	}
-
 	public function _pagelet_footer() {
 		$data = array(
 			'email' => FALSE,
@@ -227,19 +214,6 @@ class Navigator extends MY_Controller {
 
 	public function _pagelet_subscribe() {
 		return $this->load->view('pagelet_subscribe', array(), TRUE);
-	}
-
-	public function _pagelet_communication() {
-		$data = array(
-			'email' => FALSE,
-			'mobile' => FALSE,
-			'yahoo' => FALSE,
-			'skype' => FALSE,
-		);
-		foreach ($data as $key => &$value) {
-			$value = Modules::run('construction/_static_content', $key, 'config');
-		}
-		return $this->load->view('pagelet_communication', $data, TRUE);
 	}
 
 	public function _pagelet_breadcrumb() {

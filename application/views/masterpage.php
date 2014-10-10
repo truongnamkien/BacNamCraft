@@ -100,46 +100,6 @@
 				</div>
 			</div>
 		</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <div id="demoContainer" class="dpn">
-            <div class="wapper_body">
-                <div class="header">
-                    <div class="wrapper_head">
-                        <div class="logo_div">
-                            <a class="logo mt20" href="<?php echo site_url(); ?>">
-                                <img src="<?php echo asset_url('images/logo.png'); ?>" alt="<?php echo PAGE_TITLE; ?>" />
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="maincontent">
-                    <div class="wrap">
-						<?php //echo Modules::run('navigator/_pagelet_contact'); ?>
-                    </div>
-                    <div class="clear"></div>
-                </div>
-
-
-				<?php //echo Modules::run('navigator/_pagelet_connect'); ?>
-				<?php //echo Modules::run('navigator/_pagelet_subscribe'); ?>
-				<?php //echo Modules::run('navigator/_pagelet_communication'); ?>
-            </div>
-        </div>
     </body>
 </html>
 
