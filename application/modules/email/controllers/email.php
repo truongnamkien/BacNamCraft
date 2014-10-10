@@ -109,7 +109,6 @@ class Email extends MY_Outer_Controller {
 
     public function _pagelet_email_view($content = FALSE, $to_email = FALSE) {
         $data = array(
-            'header_bar' => FALSE,
             'email' => FALSE,
             'mobile' => FALSE,
             'facebook_page' => FALSE,

@@ -20,7 +20,6 @@ class Config extends MY_Admin_Controller {
             'description' => 'text',
             'yahoo' => 'text',
             'skype' => 'text',
-            'header_bar' => 'text',
         );
     }
 
