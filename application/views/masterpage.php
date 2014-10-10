@@ -51,8 +51,8 @@
 			<div id="Core">
 				<div style="height: 115px;" id="Header" class="en">
 					<div id="LogoWrapper">
-						<a href="<?php echo site_url(); ?>">
-							<span class="screen-reader-only"><?php echo PAGE_TITLE; ?></span>
+						<a href="<?php echo site_url(); ?>" title="<?php echo PAGE_TITLE; ?>">
+							<img src="<?php echo asset_url('images/logo.png'); ?>" />
 						</a>
 					</div>
 
@@ -83,8 +83,8 @@
 					<div id="PageNotes" class="pagenotes">
 						<?php echo Modules::run('navigator/_pagelet_subscribe'); ?>
 						<div class="footerlogo">
-							<a href="<?php echo site_url(); ?>">
-								<span class="screen-reader-only"><?php echo PAGE_TITLE; ?></span>
+							<a href="<?php echo site_url(); ?>" title="<?php echo PAGE_TITLE; ?>">
+								<img src="<?php echo asset_url('images/logo.png'); ?>" />
 							</a>
 						</div> 
 

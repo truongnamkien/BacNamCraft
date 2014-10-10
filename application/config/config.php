@@ -235,7 +235,7 @@ $config['cache_path'] = 'application/cache/';
 | MUST set an encryption key.  See the user guide for info.
 |
 */
-$config['encryption_key'] = 'ABAMA';
+$config['encryption_key'] = 'BACNAMCRAFT';
 
 /*
 |--------------------------------------------------------------------------

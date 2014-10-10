@@ -110,8 +110,6 @@ class Email extends MY_Outer_Controller {
     public function _pagelet_email_view($content = FALSE, $to_email = FALSE) {
         $data = array(
             'email' => FALSE,
-            'mobile' => FALSE,
-            'facebook_page' => FALSE,
         );
         foreach ($data as $key => &$value) {
             $value = Modules::run('construction/_static_content', $key, 'config');

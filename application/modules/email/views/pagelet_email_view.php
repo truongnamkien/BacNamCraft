@@ -1,7 +1,7 @@
 <table style="font-family:Arial, Helvetica, sans-serif;margin:0px!important;padding:0px!important;border:0px!important;outline:0px;" align="center" border="0" width="100%" cellpadding="0" cellspacing="0">
     <tbody>
         <tr>
-            <td colspan="3" align="center" bgcolor="#fe8a03">
+            <td colspan="3" align="center" bgcolor="#fff">
                 <table border="0" width="600" cellpadding="0" cellspacing="0">
                     <tbody>
                         <tr>
@@ -13,22 +13,12 @@
                         </tr>
                         <tr>
                             <td width="2%">&nbsp;</td>
-                            <td width="30%">
+                            <td width="96%" colspan="3">
                                 <a rel="nofollow" target="_blank" href="<?php echo site_url(); ?>" title="<?php echo PAGE_TITLE; ?>">
                                     <img src="<?php echo asset_url('images/logo.png'); ?>" border="0" height="35" width="210" />
                                 </a>
                             </td>
-                            <td align="right" valign="middle" width="40%">
-                                <img src="<?php echo asset_url('css/images/mobile.png'); ?>" border="0" height="25" width="25" />
-                            </td>
-                            <td align="left" valign="middle" width="22%">
-                                <span style="font-size:18px;font-weight:bolder;color:#fff;"><?php echo $mobile; ?></span>
-                            </td>
-                            <td align="left" width="6%">
-                                <a rel="nofollow" target="_blank" href="<?php echo $facebook_page; ?>">
-                                    <img src="<?php echo asset_url('css/images/facebook.png'); ?>" border="0" height="25" width="25" />
-                                </a>
-                            </td>
+                            <td width="2%">&nbsp;</td>
                         </tr>
                         <tr>
                             <td height="10"></td>
@@ -59,12 +49,12 @@
             <td height="10"></td>
         </tr>
         <tr>
-            <td colspan="3" style="background:#FFA945;color:#fff;">
+            <td colspan="3" style="background:#fff;color:#454545;">
                 <table border="0" width="100%" cellpadding="0" cellspacing="0">
                     <tbody>
                         <tr>
                             <td style="font-size:13px;font-weight:bold;text-align:center;" height="50">
-                                <?php echo lang('email_footer', '', $email, $mobile); ?>
+                                <?php echo lang('email_footer', '', $email); ?>
                             </td>
                         </tr>
                         <?php if (!empty($to_email)): ?>

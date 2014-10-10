@@ -31,9 +31,9 @@ class Email_Ajax extends MY_Ajax {
             } else {
                 $this->response->run("show_alert('" . lang('static_content_home_email_submit_false') . "');");
             }
-            $this->response->run("$('input[name=\"email\"]').val('');");
+            $this->response->run("$('input[name=\"subscribe_email\"]').val('');");
         } else {
-            $this->response->run("show_alert('" . form_error('email') . "');");
+            $this->response->run("show_alert('" . form_error('subscribe_email') . "');");
         }
         $this->response->send();
     }
