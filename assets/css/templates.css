@@ -2562,6 +2562,7 @@ body.newLayout,
 }
 #Footer .quicklinks {
     padding-top:31px;
+    float: right;
     color:#666;
     font-size:12px;
     font-weight:700;
