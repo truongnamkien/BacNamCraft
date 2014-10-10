@@ -386,13 +386,6 @@ p.error-message{
     text-transform:lowercase;
     width:auto;
 }
-#addtocart .cartCol4 .error-message{
-    width:90px;
-}
-#addtocart .cartCol4 .selectboxwrap .qtyVal{
-    float:left;
-    margin-top:11px;
-}
 p.error-msg,#recOrder-acct p.error-msg,.signinCart.thankyouContentLeft p.error-msg{
     font-size:11px;
     font-weight:bold;
@@ -7391,43 +7384,6 @@ fieldset#gift-card div.pay-lftbox{
     background-position:-143px -111px;
     height:25px;
     width:24px;
-}
-#addtocart .addtocartsrvpln .bldtxt{
-    color:#000;
-    font-size:12px;
-    font-weight:bold;
-    padding:3px;
-}
-#reviews .emailReviewRO{
-    background-color:#F6FBFE;
-}
-.bundlecartdata .servsec{
-    margin-bottom:5px;
-    width:535px;
-}
-.bundle-cart .bundlecartdata .child-cartdata .itemlinks{
-    padding:2px 0 0 24px;
-}
-#savedItemsList.bundle-cart .cartdata .cartCol5{
-    width:130px;
-}
-.saveditemsec{
-    border-bottom:1px dashed #CCC;
-    margin-bottom:20px;
-    margin-left:10px;
-}
-.savefltrcheckout{
-    font-family:arial;
-    margin-right:20px;
-    margin-top:20px;
-}
-.saveditem{
-    color:#333;
-    display:inline;
-    font-size:28px;
-    font-weight:bold;
-    line-height:28px;
-    margin-right:28px;
 }
 #primary{
     float:left;
