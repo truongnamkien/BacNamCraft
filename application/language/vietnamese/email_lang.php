@@ -5,7 +5,6 @@ $lang['email_footer'] = 'Chúng tôi luôn sẵn sàng hỗ trợ bạn qua emai
 $lang['email_footer_subscribe'] = 'Bạn nhận được thư này là do địa chỉ email đã được đăng ký thành viên ' . PAGE_TITLE . '.';
 $lang['email_footer_unsubscribe'] = 'Để ngưng không nhận email thông báo các khuyến mãi từ ' . PAGE_TITLE . ', vui lòng <a rel="nofollow" style="text-decoration:none;color:#b40000;" target="_blank" href="%s">click vào đây</a>';
 
-
 $lang['email_subscribe_subject'] = 'Đăng ký nhận tin';
 $lang['email_subscribe_header'] = 'Xin chào quý khách,';
 $lang['email_subscribe_message'] = 'Quý khách vừa đăng ký nhận thông tin của <span style="font-weight:bold;color:#b40000">' . PAGE_TITLE . '</span>. Xin cảm ơn quý khách.';

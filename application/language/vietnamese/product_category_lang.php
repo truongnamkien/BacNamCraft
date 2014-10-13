@@ -12,8 +12,3 @@ $lang['product_category_status'] = 'Tình trạng';
 
 $lang['product_category_list_empty'] = 'Chưa có danh mục sản phẩm.';
 $lang['product_category_empty_parent'] = 'Không chọn';
-$lang['product_category_suggest_quote'] = 'Mua ngay kẻo lỡ';
-
-$lang['product_category_total_product'] = 'Hiện có: <a href="%s">%s sản phẩm</a>';
-
-
