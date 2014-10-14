@@ -1,6 +1,5 @@
-<li class="<?php echo ($language == $this->_current_lang ? 'selected' : ''); ?>">
+<div class="fLeft ml5">
     <a href="#" rel="async" ajaxify="<?php echo site_url('ajax/multi_lang_ajax/change_lang?lang=' . $language); ?>">
-        <span><?php echo lang('multi_language_' . $language); ?></span>
-        <img src="<?php echo asset_url('images/icon_lang_' . $language . '.png'); ?>" alt="<?php echo lang('multi_language_' . $language); ?>" width="20" />
+        <img src="<?php echo asset_url('images/icon_lang_' . $language . '.png'); ?>" title="<?php echo lang('multi_language_' . $language); ?>" width="30" />
     </a>
-</li>
+</div>

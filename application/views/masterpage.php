@@ -60,6 +60,8 @@
 						<?php echo Modules::run('navigator/_pagelet_main_menu'); ?>
 					</div>
 
+					<?php echo Modules::run('multi_lang/_icon_lang_list'); ?>
+					<div class="clear"></div>
 
 					<div class="globalMenuContainer changeCartBg">
 						<?php echo Modules::run('navigator/_pagelet_product_menu'); ?>
