@@ -1,4 +1,4 @@
-<div class="fRight mt10 mr20">
+<div class="fLeft mt10 mr20">
 	<p class="fs14 fwb"><?php echo lang('static_content_home_subscribe_header'); ?></p>
 	<div class="mt10">
 		<div class="email_res">
@@ -12,4 +12,3 @@
 		</div>
 	</div>
 </div>
-<div class="clear"></div>

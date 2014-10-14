@@ -82,11 +82,6 @@
 				<div id="Footer">
 					<div id="PageNotes" class="pagenotes">
 						<?php echo Modules::run('navigator/_pagelet_subscribe'); ?>
-						<div class="footerlogo">
-							<a href="<?php echo site_url(); ?>" title="<?php echo PAGE_TITLE; ?>">
-								<img src="<?php echo asset_url('images/logo.png'); ?>" />
-							</a>
-						</div> 
 
 						<?php echo Modules::run('navigator/_pagelet_main_menu', 'bottom'); ?>
 						<div class="clear"></div>
