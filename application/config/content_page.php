@@ -25,7 +25,7 @@ $config['page_content_photo_default_width'] = array(
     950,
 );
 
-$config['language_list'] = array('vietnamese', 'english');
+$config['language_list'] = array('english');
 $config['banner_category'] = array(
     'static_content_banner_home' => array('width' => 950, 'height' => 400),
 );

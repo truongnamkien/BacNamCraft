@@ -108,7 +108,7 @@ class MY_Outer_Controller extends MY_Controller {
 class MY_Admin_Controller extends MY_Controller {
 
     public function __construct() {
-        $this->_current_lang = 'vietnamese';
+        $this->_current_lang = 'english';
         parent::__construct();
         if ($this->my_auth->logged_in()) {
             $this->_masterview = 'admin_masterpage_logged';
