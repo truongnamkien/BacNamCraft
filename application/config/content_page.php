@@ -27,5 +27,5 @@ $config['page_content_photo_default_width'] = array(
 
 $config['language_list'] = array('english');
 $config['banner_category'] = array(
-    'static_content_banner_home' => array('width' => 950, 'height' => 400),
+    'static_content_banner_home' => array('width' => 1000, 'height' => 400),
 );
