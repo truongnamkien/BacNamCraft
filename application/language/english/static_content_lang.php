@@ -29,17 +29,9 @@ $lang['static_content_config_mobile'] = 'Mobile';
 $lang['static_content_config_facebook_page'] = 'Facebook Page';
 $lang['static_content_config_keyword'] = 'Web’s keyword';
 $lang['static_content_config_description'] = 'Web’s description';
-$lang['static_content_config_yahoo'] = 'Yahoo ID';
-$lang['static_content_config_skype'] = 'Skype ID';
-$lang['static_content_config_header_bar'] = 'Header’s content';
+$lang['static_content_config_currency'] = 'Currency';
  
 $lang['static_content_banner_home'] = 'Banner - Homepage';
-$lang['static_content_banner_product'] = 'Banner - Products';
-$lang['static_content_banner_contact'] = 'Banner - Contact';
-$lang['static_content_banner_cart'] = 'Banner – Cart';
-$lang['static_content_banner_home_right_1'] = 'Banner - Homepage (right 1)';
-$lang['static_content_banner_home_right_2'] = 'Banner - Homepage (right 2)';
-$lang['static_content_banner_home_right_3'] = 'Banner – Homepage (right 3)';
  
 $lang['static_content_content_title'] = 'Content';
  
@@ -55,3 +47,4 @@ $lang['home_content_name'] = 'Banner Type';
 $lang['home_photo'] = 'Photo';
 $lang['home_new_photo'] = 'New Photo';
 $lang['home_photo_empty_error'] = 'Please choose photo to upload.';
+

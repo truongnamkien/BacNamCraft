@@ -35,7 +35,12 @@ if (!function_exists('format_price')) {
             $str .= substr($price, $first_length, 3);
             $first_length += 3;
         }
-        $str = $direction . $str . ' VND';
+        $currency = Modules::run('construction/_static_content', 'currency', 'config');
+        if (empty($currency)) {
+            $currency = 'VND';
+        }
+        
+        $str = $direction . $str . ' ' . $currency;
         return $str;
     }
 
