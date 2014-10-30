@@ -15,7 +15,7 @@ $lang['product_product_category_id'] = 'Product Category';
 $lang['product_display_order'] = 'Display Order';
 $lang['product_photo'] = 'Photo';
 $lang['product_status'] = 'Status';
-$lang['product_hot'] = 'Hot product';
+$lang['product_hot'] = 'Best seller';
 $lang['product_sold_out'] = 'Sold Out';
  
 $lang['product_photo_create'] = 'Add more photo';
