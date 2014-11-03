@@ -1,6 +1,6 @@
 <a href="<?php echo product_url($product); ?>" title="<?php echo $product['name_' . $this->_current_lang]; ?>">
 	<div class="coupTitle"><?php echo $product['name_' . $this->_current_lang]; ?></div>
-	<img src="<?php echo base_url($product['photo']); ?>" alt="<?php echo $product['name_' . $this->_current_lang]; ?>" class="coupImage" height="85" width="85" />
+	<img src="<?php echo base_url($product['photo']); ?>" alt="<?php echo $product['name_' . $this->_current_lang]; ?>" class="coupImage" height="66" width="88" />
 	<div class="coupCopy">
 		<div class="desc">
 			<?php if (!empty($product['price_off'])): ?>

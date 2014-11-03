@@ -2052,8 +2052,8 @@ p.uploadvideo {
 }
 
 #ProductDetailsTop .primaryInfo button#addToCart span{
-    text-shadow:1px 1px #a50101;
-    color:#fff;
+    text-shadow:1px 1px #ccc;
+    color:#000;
     display:inline;
 }
 #ProductDetailsTop .primaryInfo #textblock1 a.linkbutton,
@@ -2075,7 +2075,7 @@ p.uploadvideo {
 a#findInStoreActive{background: #015374;}
 a#notifyMeBtn{background:orange}
 #ProductDetailsTop .primaryInfo button#addToCart{
-    background:#c00;border:1px solid #790000;
+    background:#DCDEE7;border:1px solid #444;
     box-shadow: none;
     height: 40px;
     width: 230px !important;

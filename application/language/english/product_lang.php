@@ -5,6 +5,7 @@ $lang['product_update_submit'] = 'Update';
  
 $lang['product_product'] = 'Product';
 $lang['product_product_id'] = 'ID';
+$lang['product_description'] = 'Description';
 $lang['product_description_vietnamese'] = 'Description (Vietnamese)';
 $lang['product_description_english'] = 'Description (English)';
 $lang['product_name_vietnamese'] = 'Product name (Vietnamese)';

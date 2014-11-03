@@ -19,7 +19,7 @@
 					<?php if (!empty($product['photo_list']) && isset($product['photo_list'][0])): ?>
 						<div id="photo_panel">
 							<?php $photo_path = Modules::run('photo/_get_photo_path', $product['photo_list'][0]['url'], 480); ?>
-							<img src="<?php echo base_url($photo_path); ?>" alt="<?php echo $product['name_' . $this->_current_lang]; ?>" height="480" width="480" />
+							<img src="<?php echo base_url($photo_path); ?>" alt="<?php echo $product['name_' . $this->_current_lang]; ?>" height="360" width="480" />
 						</div>
 						<div class="clear"></div>
 
@@ -29,7 +29,7 @@
 									<?php foreach ($product['photo_list'] as $photo): ?>
 										<li class="fLeft mr5">
 											<a class="photo_thumb" href="<?php echo base_url(Modules::run('photo/_get_photo_path', $photo['url'], 480)); ?>">
-												<img width="80" height="80" alt="<?php echo $product['name_' . $this->_current_lang]; ?>" src="<?php echo base_url(Modules::run('photo/_get_photo_path', $photo['url'], 80)); ?>" />
+												<img width="80" height="60" alt="<?php echo $product['name_' . $this->_current_lang]; ?>" src="<?php echo base_url(Modules::run('photo/_get_photo_path', $photo['url'], 80)); ?>" />
 											</a>
 										</li>
 									<?php endforeach; ?>
@@ -98,7 +98,7 @@
 
 		$('.photo_thumb').click(function(e) {
 			var _img = $(this);
-			var _html = '<img width="480" height="480" src="' + _img.attr('href') + '" alt="<?php echo $product['name_' . $this->_current_lang]; ?>" />';
+			var _html = '<img width="480" height="360" src="' + _img.attr('href') + '" alt="<?php echo $product['name_' . $this->_current_lang]; ?>" />';
 			$('#photo_panel').html(_html);
 			e.preventDefault();
 		});

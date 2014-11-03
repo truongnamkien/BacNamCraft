@@ -1,7 +1,7 @@
 <div class="cartCol1">
     <a href="<?php echo product_url($item['product']); ?>">
 		<?php if (!empty($item['product']['photo'])): ?>
-			<img height="75" width="75" alt="<?php echo $item['product']['name_' . $this->_current_lang]; ?>" src="<?php echo base_url(Modules::run('photo/_get_photo_path', $item['product']['photo']['url'], 75)); ?>" />
+			<img height="56" width="75" alt="<?php echo $item['product']['name_' . $this->_current_lang]; ?>" src="<?php echo base_url(Modules::run('photo/_get_photo_path', $item['product']['photo']['url'], 75)); ?>" />
 		<?php endif; ?>
     </a>
 </div>
