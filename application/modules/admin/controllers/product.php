@@ -65,10 +65,13 @@ class Product extends MY_Inner_Admin_Controller {
             set_notice_message('danger', lang('error_admin_product_empty_category'));
             redirect(site_url('admin/product_category/create'));
         }
-
+        $currency = Modules::run('construction/_static_content', 'currency', 'config');
+        if (empty($currency)) {
+            $currency = 'VND';
+        }
         $specific_input = array(
-            'price' => array('input' => 'suffix', 'extra' => 'VNĐ'),
-            'price_off' => array('input' => 'suffix', 'extra' => 'VNĐ'),
+            'price' => array('input' => 'suffix', 'extra' => $currency),
+            'price_off' => array('input' => 'suffix', 'extra' => $currency),
             'photo' => array('input' => 'none'),
             'product_category_id' => array('input' => 'dropdown', 'options' => $product_categories),
             'hot' => array('input' => 'checkbox_toggle'),

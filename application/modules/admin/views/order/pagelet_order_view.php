@@ -15,7 +15,9 @@
             <div class="input-group">
                 <span class="input-group-addon">$</span>
                 <input type="text" class="form-control" value="<?php echo $discount; ?>" id="discount" name="discount" />
-                <span class="input-group-addon">VND</span>
+                <?php $currency = Modules::run('construction/_static_content', 'currency', 'config'); ?>
+                <?php $currency = empty($currency) ? 'VND' : $currency; ?>
+                <span class="input-group-addon"><?php echo $currency; ?></span>
             </div>
         </td>
     <?php else: ?>
