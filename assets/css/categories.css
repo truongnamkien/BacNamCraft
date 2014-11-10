@@ -811,6 +811,10 @@
     color:#FFF !important;
     margin-top: 35px;
 }
+#product_list .add_to_cart_form .chkbxStyleDisabled {
+    padding-top: 5px;
+    margin-top: 10px;
+}
 .couponcapped .chkbxStyle{
     background:none!important;
     color:#C20000!important;

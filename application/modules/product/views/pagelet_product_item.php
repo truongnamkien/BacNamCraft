@@ -24,9 +24,9 @@
 <?php if ($product['sold_out'] == STATUS_ACTIVE): ?>
 	<a href="#" class="fake chkbxStyleDisabled"><?php echo lang('product_sold_out'); ?></a>
 <?php else: ?>
-	<form action="<?php echo site_url('ajax/product_ajax/add_to_cart/' . $product['product_id']); ?>" rel="async" method="post">
+	<form class="add_to_cart_form" action="<?php echo site_url('ajax/product_ajax/add_to_cart/' . $product['product_id']); ?>" rel="async" method="post">
 		<input class="quantity_input mt10 w80" autocomplete="off" type="number" name="quantity" value="1" />
-		<input class="chkbxStyle" type="submit" title="<?php echo lang('product_add_to_cart'); ?>" value="<?php echo lang('product_add_to_cart'); ?>" name="submit" />
+		<input class="chkbxStyleDisabled" type="submit" title="<?php echo lang('product_add_to_cart'); ?>" value="<?php echo lang('product_add_to_cart'); ?>" name="submit" />
 	</form>
 <?php endif; ?>
 
