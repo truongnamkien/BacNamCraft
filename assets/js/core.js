@@ -1,10 +1,11 @@
 var show_alert = function(msg, options) {
     var _default = {
-        header: 'Thông Báo',
-        btnOk: 'Đồng ý',
+        header: alertHeader,
+        btnOk: btnOk,
         callback: function() {
         }
     };
+    $.extend(_default, options);
     _default.html = '\
         <div class="lightbox ma20 blueColor">'
             + '<div class="lbTop"></div>'
@@ -26,7 +27,6 @@ var show_alert = function(msg, options) {
             + '<div class="lbBot"></div>'
             + '</div>';
 
-    $.extend(_default, options);
 
     $.colorbox({
         scrolling: false,
@@ -55,8 +55,8 @@ var show_confirm = function(params) {
     var opts = {
         content: '',
         title: '',
-        btnOk: 'Đồng ý',
-        btnCancel: 'Đóng',
+        btnOk: btnOk,
+        btnCancel: btnCancel,
         callback: function(result) {
         }
     };
@@ -112,28 +112,28 @@ var show_confirm = function(params) {
 $.extend(Dialog, {
     OK: {
         name: 'ok',
-        label: 'Đồng ý',
+        label: btnOk,
         className: 'button fRight mr10'
     },
     SURE: {
         name: 'sure',
-        label: 'Chắc chắn',
+        label: btnSure,
         className: 'button fRight mr10'
     },
     CONFIRM: {
         name: 'confirm',
-        label: 'Xác nhận',
+        label: btnConfirm,
         className: 'button fRight mr10'
     },
     CANCEL: {
         name: 'cancel',
-        label: 'Hủy bỏ',
+        label: btnCancel,
         className: 'disabled_btn fRight mr10'
     },
     CLOSE: {
         name: 'close',
         className: 'disabled_btn fRight mr10',
-        label: 'Đóng'
+        label: btnClose
     }
 });
 

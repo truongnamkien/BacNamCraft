@@ -10,6 +10,12 @@
 
         <script type="text/javascript">
 			var _asset_url = '<?php echo asset_url(); ?>';
+			var alertHeader = '<?php echo lang('authen_js_alert_header'); ?>';
+			var btnOk = '<?php echo lang('authen_js_btn_ok'); ?>';
+			var btnCancel = '<?php echo lang('authen_js_btn_cancel'); ?>';
+			var btnConfirm = '<?php echo lang('authen_js_btn_confirm'); ?>';
+			var btnSure = '<?php echo lang('authen_js_btn_sure'); ?>';
+			var btnClose = '<?php echo lang('authen_js_btn_close'); ?>';
         </script>
 
 		<?php echo asset_link_tag('css/reset.css', 'stylesheet', 'text/css'); ?>

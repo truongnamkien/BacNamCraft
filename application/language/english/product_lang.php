@@ -23,7 +23,7 @@ $lang['product_photo_create'] = 'Add more photo';
 $lang['product_photo_remove'] = 'Remove photo';
 $lang['product_photo_upload_error'] = 'Photo upload error!';
  
-$lang['product_list_empty'] = 'Your cart is empty.';
+$lang['product_list_empty'] = 'Product list is empty.';
  
 $lang['product_add_to_cart'] = 'Add to cart';
 $lang['product_add_to_cart_success'] = 'You have just added %s product(s) to your cart.';

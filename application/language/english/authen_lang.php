@@ -15,3 +15,11 @@ $lang['authen_developer'] = 'Developed by<span style="font-weight: bold; color: 
  
 $lang['authen_404_error_title'] = 'Cannot find';
 $lang['authen_404_error_content'] = 'Content is not available.';
+
+$lang['authen_js_btn_ok'] = 'Ok';
+$lang['authen_js_btn_cancel'] = 'Cancel';
+$lang['authen_js_btn_confirm'] = 'Confirm';
+$lang['authen_js_btn_sure'] = 'Sure';
+$lang['authen_js_btn_close'] = 'Close';
+$lang['authen_js_alert_header'] = 'Alert';
+

@@ -15,3 +15,11 @@ $lang['authen_developer'] = 'Phát triển bởi <span style="font-weight: bold;
 
 $lang['authen_404_error_title'] = 'Không tìm thấy thông tin';
 $lang['authen_404_error_content'] = 'Nội dung cần tìm không có.';
+
+$lang['authen_js_btn_ok'] = 'Đồng ý';
+$lang['authen_js_btn_cancel'] = 'Hủy';
+$lang['authen_js_btn_confirm'] = 'Xác nhận';
+$lang['authen_js_btn_sure'] = 'Chắc chắn';
+$lang['authen_js_btn_close'] = 'Đóng';
+$lang['authen_js_alert_header'] = 'Thông báo';
+
